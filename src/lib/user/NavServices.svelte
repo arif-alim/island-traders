@@ -1,8 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-
 	let title = 'Incoming Packages';
-
 	$: title = title;
 
 	function titleChange(name) {
@@ -10,10 +8,12 @@
 	}
 
 	const routes = [
-		{ name: 'Incoming packages', href: '/user/packages' },
-		{ name: 'Packages in the warehouse', href: '/user/packages/warehouse' },
-		{ name: 'Action pending', href: '/user/packages/action-pending' },
-		{ name: 'Ready to ship', href: '/user/packages/ready-to-ship' }
+		{ name: 'Consolidation', href: '/user/services' },
+		{ name: 'Bond', href: '/user/services/bond' },
+		{ name: 'Storage', href: '/user/services/storage' },
+		{ name: 'Purchases', href: '/user/services/purchases' },
+		{ name: 'Broker', href: '/user/services/broker' },
+		{ name: 'Pickup', href: '/user/services/pickup' }
 	];
 </script>
 
