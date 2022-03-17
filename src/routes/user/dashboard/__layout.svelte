@@ -1,8 +1,8 @@
 <script>
-	import NavServices from '$lib/user/NavServices.svelte';
+	import NavDashboard from '$lib/user/NavDashboard.svelte';
 </script>
 
-<NavServices />
+<NavDashboard />
 
 <!-- Page Section -->
 <div class="-mt-28 lg:-mt-32 container xl:max-w-7xl mx-auto px-4 lg:px-8 py-3">

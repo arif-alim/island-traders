@@ -5,11 +5,12 @@
 	let logoAlt = 'Island Traders Logo';
 
 	const routes = [
-		{ name: 'My Packages', href: '/user/packages' },
-		{ name: 'Our Services', href: '/user/services' },
-		{ name: 'My Bills', href: '/user/bills' },
-		{ name: 'Shipping Estimator', href: '/user/estimator' },
-		{ name: 'Pickup Requests', href: '/user/pickup' }
+		{ name: 'Dashboard', href: '/user/dashboard' },
+		{ name: 'Packages', href: '/user/packages' },
+		{ name: 'Services', href: '/user/services' },
+		{ name: 'Bills', href: '/user/bills' },
+		{ name: 'Estimator', href: '/user/estimator' },
+		{ name: 'Pickup', href: '/user/pickup' }
 	];
 </script>
 
@@ -18,7 +19,7 @@
 		<div class="relative flex justify-between h-14 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex-shrink-0 flex items-center">
-					<a href="/user" sveltekit:prefetch>
+					<a href="/user/dashboard" sveltekit:prefetch>
 						<img src={logo} alt={logoAlt} class="h-10 w-auto" />
 					</a>
 				</div>
