@@ -28,10 +28,10 @@
 						<a
 							href={route.href}
 							sveltekit:prefetch
-							class="inline-flex items-center pt-1 border-b-2 text-sm font-medium 
+							class="inline-flex items-center pt-1 text-sm font-medium 
 							{route.href === $page.url.pathname
-								? 'border-slate-800 text-slate-900 font-bold'
-								: 'border-transparent text-slate-600 hover:border-gray-300 hover:text-gray-700'}"
+								? ' text-slate-900 font-bold'
+								: ' text-slate-600 hover:text-gray-700'}"
 						>
 							{route.name}
 						</a>

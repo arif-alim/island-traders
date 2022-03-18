@@ -5,10 +5,11 @@
 <!-- Page Heading -->
 <div class="bg-gray-800 h-48">
 	<div class="container xl:max-w-7xl mx-auto px-4 lg:px-8">
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 border-t py-5 border-gray-700">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 border-t py-5 border-gray-700">
+			<!-- BEGIN Left Section -->
 			<div class="flex items-center border-gray-700">
 				<div class="grow">
-					<h1 class="text-2xl font-semibold text-white">Dashboard</h1>
+					<h1 class="text-2xl font-semibold text-white">My Bills</h1>
 				</div>
 			</div>
 			<!-- END Left Section -->

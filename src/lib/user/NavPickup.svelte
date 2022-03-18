@@ -8,7 +8,7 @@
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 border-t py-5 border-gray-700">
 			<div class="flex items-center border-gray-700">
 				<div class="grow">
-					<h1 class="text-2xl font-semibold text-white">Dashboard</h1>
+					<h1 class="text-2xl font-semibold text-white">Pickup Requests</h1>
 				</div>
 			</div>
 			<!-- END Left Section -->
