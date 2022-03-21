@@ -5,6 +5,8 @@
 
 <Header />
 
-<main id="page-content" class="flex flex-auto flex-col max-w-full">
-	<slot />
-</main>
+<div class="bg-white">
+	<main id="page-content" class="flex flex-auto flex-col max-w-full">
+		<slot />
+	</main>
+</div>

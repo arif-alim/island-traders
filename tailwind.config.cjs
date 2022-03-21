@@ -1,43 +1,44 @@
-
-
 module.exports = {
-  mdoe: 'jit',
-  content: ['./src/**/*.{html,js,svelte,ts}', "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"],
-  safelist: [
-    'w-64',
-    'w-1/2',
-    'rounded-l-lg',
-    'rounded-r-lg',
-    'bg-gray-200',
-    'grid-cols-4',
-    'grid-cols-7',
-    'h-6',
-    'leading-6',
-    'h-9',
-    'leading-9',
-    'shadow-lg',
-    'bg-opacity-50',
-    'dark:bg-opacity-80'
-  ],
-  theme: {
-    screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+	mdoe: 'jit',
+	content: [
+		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
+	],
+	safelist: [
+		'w-64',
+		'w-1/2',
+		'rounded-l-lg',
+		'rounded-r-lg',
+		'bg-gray-200',
+		'grid-cols-4',
+		'grid-cols-7',
+		'h-6',
+		'leading-6',
+		'h-9',
+		'leading-9',
+		'shadow-lg',
+		'bg-opacity-50',
+		'dark:bg-opacity-80'
+	],
+	theme: {
+		screens: {
+			sm: '640px',
+			// => @media (min-width: 640px) { ... }
 
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
+			md: '768px',
+			// => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+			lg: '1024px',
+			// => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+			xl: '1280px',
+			// => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    },
-    active: 'currentColor',
-    interFontFeatures: {
+			'2xl': '1536px'
+			// => @media (min-width: 1536px) { ... }
+		},
+		active: 'currentColor',
+		interFontFeatures: {
 			default: ['calt', 'liga', 'kern'],
 			numeric: ['tnum', 'salt', 'ss02']
 		},
@@ -47,14 +48,14 @@ module.exports = {
 			display: ['Inter var', 'system-ui', 'ui-sans-serif'],
 			body: ['Inter var', 'system-ui', 'ui-sans-serif']
 		},
-    fontSize: {
+		fontSize: {
 			xs: '0.75rem',
-      xm: '0.775rem',
-      xb: '0.8rem',
+			xm: '0.775rem',
+			xb: '0.8rem',
 			ss: '0.825rem',
 			sm: '0.85rem',
-      sb: '0.875rem',
-      sl: '0.9rem', 
+			sb: '0.875rem',
+			sl: '0.9rem',
 			tiny: '0.925rem',
 			base: '1rem',
 			lg: '1.125rem',
@@ -65,14 +66,11 @@ module.exports = {
 			'5xl': '3rem',
 			'6xl': '4rem'
 		},
-    extend: {
-      dropShadow: {
-        '3xl': '0 3px 3px rgba(0, 0, 0, 0.30)',
-        '4xl': [
-            '0 35px 35px rgba(0, 0, 0, 0.25)',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
-        ]
-      },
+		extend: {
+			dropShadow: {
+				'3xl': '0 3px 3px rgba(0, 0, 0, 0.30)',
+				'4xl': ['0 35px 35px rgba(0, 0, 0, 0.25)', '0 45px 65px rgba(0, 0, 0, 0.15)']
+			},
 			colors: {
 				pblue: {
 					100: '#CCE0F8',
@@ -120,13 +118,14 @@ module.exports = {
 				80: 80,
 				90: 90,
 				100: 100
-			},
+			}
 		}
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp')
-  ],
-}
+	},
+	plugins: [
+		require('flowbite/plugin'),
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/line-clamp')
+	]
+};
