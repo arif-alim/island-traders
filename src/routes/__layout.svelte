@@ -6,7 +6,7 @@
 
 <div class="bg-white">
 	<Header />
-	<main id="page-content" class="flex flex-auto flex-col max-w-full">
+	<main>
 		<slot />
 	</main>
 	<Footer />

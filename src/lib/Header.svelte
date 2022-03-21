@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import TopBar from '../components/TopBar.svelte';
+	import TopBar from '../components/public/TopBar.svelte';
 	import logo from '$lib/islandtraders-logodark.svg';
 
 	let logoAlt = 'Island Traders Logo';
@@ -19,13 +19,13 @@
 	];
 </script>
 
-<header class="relative z-10">
+<header class="relative">
 	<nav aria-label="Top" class="border-b border-gray-200">
 		<!-- Top navigation -->
 		<TopBar />
 	</nav>
 </header>
-<header class="bg-white shadow">
+<header class="bg-white shadow mb-8">
 	<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
 		<div class="relative flex justify-between h-14 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
