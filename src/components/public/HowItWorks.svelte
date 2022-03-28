@@ -20,11 +20,11 @@
 			<div class="flex items-center">
 				<div class="hidden sm:flex w-full border border-slate-100" />
 				<div class="hidden sm:block shrink-0">
-					<span class="inline-block rounded-full bg-pblue-100 shadow-lg p-2 ">
+					<span class="inline-block rounded-full bg-white shadow-lg p-2 mb-5">
 						<img
 							src="https://source.unsplash.com/bY4GXQKfZrA/320x320"
 							alt="User Avatar"
-							class="inline-block w-40 rounded-full"
+							class="inline-block w-40 h-40 rounded-full"
 						/>
 					</span>
 				</div>
