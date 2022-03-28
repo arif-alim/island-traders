@@ -20,18 +20,18 @@
 </script>
 
 <div class="hidden lg:block relative">
-	<nav aria-label="Top" class="border-b border-gray-100">
+	<nav aria-label="Top" class="border-b border-gray-100 bg-gray-900">
 		<!-- Top navigation -->
 		<TopBar />
 	</nav>
 </div>
 <header class="bg-white shadow-sm ">
 	<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-		<div class="relative flex justify-between h-14 ">
+		<div class="relative flex justify-between h-16 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex-shrink-0 flex items-center">
 					<a href="/" sveltekit:prefetch>
-						<img src={logo} alt={logoAlt} class="h-12 w-auto" />
+						<img src={logo} alt={logoAlt} class="h-14 w-auto py-1" />
 					</a>
 				</div>
 				<div class="hidden sm:ml-12 lg:flex sm:space-x-8">
@@ -39,7 +39,7 @@
 						<a
 							href={route.href}
 							sveltekit:prefetch
-							class="inline-flex items-center pt-1 text-xb tracking-tight uppercase
+							class="inline-flex items-center text-xb tracking-tight uppercase
 							{route.href === $page.url.pathname
 								? ' text-sky-900 font-bold'
 								: ' text-gray-800 hover:text-sky-900 font-semibold hover:font-bold'}"
@@ -58,7 +58,7 @@
 						<a
 							href={route.href}
 							sveltekit:prefetch
-							class="inline-flex items-center pt-1 text-xb tracking-tight uppercase
+							class="inline-flex items-center text-xb tracking-tight uppercase
 							{route.href === $page.url.pathname
 								? ' text-sky-900 font-bold'
 								: ' text-gray-800 hover:text-sky-900 font-semibold hover:font-bold'}"

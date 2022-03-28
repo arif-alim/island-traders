@@ -4,15 +4,12 @@
 		<!-- Heading -->
 		<div class="max-w-4xl">
 			<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-				How Does This Work?
+				Why Island Traders?
 			</h2>
-			<p class="mt-4 text-gray-700 max-w-4xl prose">
-				At Trip Support, we believe in offering you simple solutions for your travel needs. That’s
-				why our Book Now Pay Later system is as easy as can be. Simply choose your travel
-				destination, and we will do the rest. We will buy your tickets and your vacation packages.
-				Once that happens, you’d be asked to pay us in installments. Our Book Now Pay Later option
-				allows you to enjoy the benefits of early bookings savings. Instead of paying the full
-				amount of your trip in advance, you only have to place a deposit to secure your tickets.
+			<p class="mt-4 text-gray-700 prose">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 		</div>
 		<!-- END Heading -->
@@ -45,7 +42,7 @@
 						>
 					</div>
 				</div>
-				<h4 class="text-lg font-bold mb-2 text-center">Components</h4>
+				<h4 class="text-lg font-bold mb-2 text-center">Ship</h4>
 				<p class="leading-relaxed text-gray-600">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.
@@ -78,7 +75,7 @@
 						>
 					</div>
 				</div>
-				<h4 class="text-lg font-bold mb-2 text-center">Lighting fast UI</h4>
+				<h4 class="text-lg font-bold mb-2 text-center">Shop</h4>
 				<p class="leading-relaxed text-gray-600">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.
@@ -110,8 +107,8 @@
 						>
 					</div>
 				</div>
-				<h4 class="text-lg font-bold mb-2 text-center">Works globally</h4>
-				<p class="leading-relaxed text-gray-600">
+				<h4 class="text-xl font-bold mb-2 text-center">Save</h4>
+				<p class="leading-relaxed text-gray-600 text-base">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.
 				</p>

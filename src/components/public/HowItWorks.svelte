@@ -2,19 +2,15 @@
 	let activeTab = 'test';
 </script>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20 lg:space-y-8">
 	<!-- Heading -->
 	<div class="max-w-4xl">
 		<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
 			How Does This Work?
 		</h2>
-		<p class="mt-4 text-gray-700 max-w-4xl prose">
-			At Trip Support, we believe in offering you simple solutions for your travel needs. That’s why
-			our Book Now Pay Later system is as easy as can be. Simply choose your travel destination, and
-			we will do the rest. We will buy your tickets and your vacation packages. Once that happens,
-			you’d be asked to pay us in installments. Our Book Now Pay Later option allows you to enjoy
-			the benefits of early bookings savings. Instead of paying the full amount of your trip in
-			advance, you only have to place a deposit to secure your tickets.
+		<p class="mt-2 text-gray-700 prose">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam.
 		</p>
 	</div>
 	<!-- END Heading -->
