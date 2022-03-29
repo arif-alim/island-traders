@@ -2,7 +2,7 @@
 	// import 'tw-elements';
 </script>
 
-<div class="flex space-x-2 max-h-[500px]">
+<div class="flex space-x-2">
 	<div class="relative w-full lg:w-8/12">
 		<div>
 			<!-- <img
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden lg:block relative w-full lg:w-4/12 ">
+	<div class="hidden lg:block relative lg:w-4/12 ">
 		<div class="max-w-7xl h-full">
 			<img
 				src="https://islandtraders.s3.ca-central-1.amazonaws.com/home/islandtraders_consolidation.jpg"
