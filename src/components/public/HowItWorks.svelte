@@ -18,7 +18,7 @@
 	<div class="flex items-center">
 		<div class="flex-col relative w-full lg:w-1/4">
 			<div class="flex items-center">
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 				<div class="hidden sm:block shrink-0">
 					<span class="inline-block rounded-full bg-white shadow-lg p-2 mb-5">
 						<img
@@ -28,7 +28,7 @@
 						/>
 					</span>
 				</div>
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
@@ -40,7 +40,7 @@
 		</div>
 		<div class="flex-col relative w-full lg:w-1/4">
 			<div class="flex items-center">
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 				<div class="hidden sm:block shrink-0">
 					<span class="inline-block rounded-full bg-white shadow-lg p-2 mb-5">
 						<img
@@ -50,7 +50,7 @@
 						/>
 					</span>
 				</div>
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
@@ -62,7 +62,7 @@
 		</div>
 		<div class="flex-col relative w-full lg:w-1/4">
 			<div class="flex items-center">
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 				<div class="hidden sm:block shrink-0">
 					<span class="inline-block rounded-full bg-white shadow-lg p-2 mb-5">
 						<img
@@ -72,7 +72,7 @@
 						/>
 					</span>
 				</div>
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
@@ -84,7 +84,7 @@
 		</div>
 		<div class="flex-col relative w-full lg:w-1/4">
 			<div class="flex items-center">
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 				<div class="hidden sm:block shrink-0">
 					<span class="inline-block rounded-full bg-white shadow-lg p-2 mb-5">
 						<img
@@ -94,7 +94,7 @@
 						/>
 					</span>
 				</div>
-				<div class="hidden sm:flex w-full border border-slate-100" />
+				<div class="hidden sm:flex w-full border border-slate-200" />
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">

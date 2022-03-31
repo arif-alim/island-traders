@@ -15,7 +15,7 @@
 				<div class="overflow-hidden aspect-w-2 aspect-h-1">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="/images/public/home/services/consolidation.jpg"
+						src="/images/public/home/services/help-purchase.jpg"
 						alt="Preview Feature Image"
 						class="rounded-lg object-cover"
 					/>
