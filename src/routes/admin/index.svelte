@@ -70,7 +70,7 @@
 			</div>
 			<div class="mt-5 flex-1 h-0 overflow-y-auto">
 				<nav class="px-2 space-y-1">
-					<!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+					<!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 					<a
 						href="#"
 						class="bg-gray-100 text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
@@ -100,7 +100,7 @@
 
 					<a
 						href="#"
-						class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
+						class="text-gray-700 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
 					>
 						<!-- Heroicon name: outline/users -->
 						<svg
@@ -123,7 +123,7 @@
 
 					<a
 						href="#"
-						class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
+						class="text-gray-700 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
 					>
 						<!-- Heroicon name: outline/folder -->
 						<svg
@@ -146,7 +146,7 @@
 
 					<a
 						href="#"
-						class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
+						class="text-gray-700 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
 					>
 						<!-- Heroicon name: outline/calendar -->
 						<svg
@@ -169,7 +169,7 @@
 
 					<a
 						href="#"
-						class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
+						class="text-gray-700 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
 					>
 						<!-- Heroicon name: outline/inbox -->
 						<svg
@@ -192,7 +192,7 @@
 
 					<a
 						href="#"
-						class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
+						class="text-gray-700 hover:bg-gray-50 hover:text-gray-900 group rounded-md py-2 px-2 flex items-center text-base font-medium"
 					>
 						<!-- Heroicon name: outline/chart-bar -->
 						<svg
@@ -231,7 +231,7 @@
 			<div class="mt-5 flex-grow flex flex-col">
 				<nav class="flex-1 px-2 space-y-1 bg-white" aria-label="Sidebar">
 					<div>
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<a
 							href="#"
 							class="bg-gray-100 text-gray-900 group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md"
@@ -261,10 +261,10 @@
 					</div>
 
 					<div class="space-y-1">
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<button
 							type="button"
-							class="bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+							class="bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
 							aria-controls="sub-menu-1"
 							aria-expanded="false"
 						>
@@ -298,28 +298,28 @@
 						<div class="space-y-1" id="sub-menu-1">
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Overview
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Members
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Calendar
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Settings
 							</a>
@@ -327,10 +327,10 @@
 					</div>
 
 					<div class="space-y-1">
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<button
 							type="button"
-							class="bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+							class="bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
 							aria-controls="sub-menu-2"
 							aria-expanded="false"
 						>
@@ -364,28 +364,28 @@
 						<div class="space-y-1" id="sub-menu-2">
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Overview
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Members
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Calendar
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Settings
 							</a>
@@ -393,10 +393,10 @@
 					</div>
 
 					<div class="space-y-1">
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<button
 							type="button"
-							class="bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+							class="bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
 							aria-controls="sub-menu-3"
 							aria-expanded="false"
 						>
@@ -430,28 +430,28 @@
 						<div class="space-y-1" id="sub-menu-3">
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Overview
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Members
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Calendar
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Settings
 							</a>
@@ -459,10 +459,10 @@
 					</div>
 
 					<div class="space-y-1">
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<button
 							type="button"
-							class="bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+							class="bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
 							aria-controls="sub-menu-4"
 							aria-expanded="false"
 						>
@@ -496,28 +496,28 @@
 						<div class="space-y-1" id="sub-menu-4">
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Overview
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Members
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Calendar
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Settings
 							</a>
@@ -525,10 +525,10 @@
 					</div>
 
 					<div class="space-y-1">
-						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+						<!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900" -->
 						<button
 							type="button"
-							class="bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+							class="bg-white text-gray-700 hover:bg-gray-50 hover:text-gray-900 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
 							aria-controls="sub-menu-5"
 							aria-expanded="false"
 						>
@@ -562,28 +562,28 @@
 						<div class="space-y-1" id="sub-menu-5">
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Overview
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Members
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Calendar
 							</a>
 
 							<a
 								href="#"
-								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+								class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
 							>
 								Settings
 							</a>
@@ -624,7 +624,7 @@
 					<div class="flex-1 flex">
 						<form class="w-full flex md:ml-0" action="#" method="GET">
 							<label for="search-field" class="sr-only">Search</label>
-							<div class="relative w-full text-gray-400 focus-within:text-gray-600">
+							<div class="relative w-full text-gray-400 focus-within:text-gray-700">
 								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center">
 									<!-- Heroicon name: solid/search -->
 									<svg

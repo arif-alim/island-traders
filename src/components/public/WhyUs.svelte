@@ -1,6 +1,6 @@
 <!-- Features Section: Modern Alternate With Icons -->
 <div class="bg-white">
-	<div class="space-y-12 container xl:max-w-7xl mx-auto px-4 pt-12 lg:px-8 lg:pt-20">
+	<div class="space-y-12 container xl:max-w-7xl mx-auto px-4 pt-12 lg:px-8 lg:pt-24 lg:pb-12">
 		<!-- Heading -->
 		<div class="max-w-4xl">
 			<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -29,7 +29,7 @@
 					/>
 				</div>
 				<h4 class="text-2xl font-bold mb-2">Shop online</h4>
-				<p class="leading-relaxed text-gray-600">
+				<p class="leading-relaxed text-gray-700">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque proin rhoncus.
 				</p>
@@ -47,7 +47,7 @@
 					/>
 				</div>
 				<h4 class="text-2xl font-bold mb-2">Ship with us</h4>
-				<p class="leading-relaxed text-gray-600">
+				<p class="leading-relaxed text-gray-700">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque proin rhoncus.
 				</p>
@@ -64,7 +64,7 @@
 					/>
 				</div>
 				<h4 class="text-2xl font-bold mb-2">Save big</h4>
-				<p class="leading-relaxed text-gray-600">
+				<p class="leading-relaxed text-gray-700">
 					Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id
 					lectus facilisis scelerisque proin rhoncus.
 				</p>

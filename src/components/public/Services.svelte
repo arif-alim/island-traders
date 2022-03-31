@@ -9,7 +9,6 @@
 	import PackageStorageIcon from './PackageStorageIcon.svelte';
 	import HelpPurchaseIcon from './HelpPurchaseIcon.svelte';
 	import CustomsBrokerIcon from './CustomsBrokerIcon.svelte';
-	import { list } from 'postcss';
 
 	let activeTab = 'consolidation';
 	const tabList = [
@@ -25,8 +24,11 @@
 	}
 </script>
 
-<div class="bg-white">
-	<section aria-labelledby="features-heading" class="max-w-7xl mx-auto py-12 sm:px-2 lg:px-8">
+<div class="bg-slate-100">
+	<section
+		aria-labelledby="features-heading"
+		class="max-w-7xl mx-auto py-4 sm:px-2 lg:px-8 lg:py-12"
+	>
 		<div class="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
 			<!-- Heading -->
 			<div class="max-w-4xl">
@@ -34,8 +36,7 @@
 					Services we offer
 				</h2>
 				<p class="mt-4 text-gray-700 max-w-4xl prose">
-					iSLAND tRADERS Shop & Ship offers a great logistic service. We strive to offer the best
-					solution for your shipping and purchasing needs without compromise.
+					iSLAND tRADERS Shop & Ship offers a great logistic service.
 				</p>
 			</div>
 			<!-- END Heading -->
@@ -67,51 +68,6 @@
 									{list.name}
 								</button>
 							{/each}
-							<!-- <button
-								on:click={() => (activeTab = 'bonded')}
-								type="button"
-								class="text-tiny px-2 md:px-6 flex items-center py-3 capitalize {activeTab ===
-								'bonded'
-									? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
-									: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
-							>
-								<ItemsBondedIcon />
-								Items Bonded
-							</button>
-							<button
-								on:click={() => (activeTab = 'storage')}
-								type="button"
-								class="text-tiny px-2 md:px-6 flex items-center py-3 capitalize {activeTab ===
-								'storage'
-									? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
-									: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
-							>
-								<PackageStorageIcon />
-
-								Package Storage
-							</button>
-							<button
-								on:click={() => (activeTab = 'purchase')}
-								type="button"
-								class="text-tiny px-2 md:px-6 flex items-center py-3 capitalize {activeTab ===
-								'purchases'
-									? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
-									: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
-							>
-								<HelpPurchaseIcon />
-								Help purchase
-							</button>
-							<button
-								on:click={() => (activeTab = 'customs')}
-								type="button"
-								class="text-tiny px-2 md:px-6 flex items-center py-3 capitalize {activeTab ===
-								'customs'
-									? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
-									: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
-							>
-								<CustomsBrokerIcon />
-								Customs broker
-							</button> -->
 						</div>
 					</div>
 				</div>

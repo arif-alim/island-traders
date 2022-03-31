@@ -32,7 +32,7 @@
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<!-- ====== Footer Section Start -->
-		<footer class="bg-white pt-20 pb-4 relative z-10">
+		<footer class="bg-white pt-12 mt-6 pb-4 relative z-10  ">
 			<div class="container">
 				<div class="flex flex-wrap -mx-4">
 					<div class="w-full sm:w-2/3 lg:w-3/12 px-4">
