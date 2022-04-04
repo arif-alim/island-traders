@@ -2,7 +2,7 @@
 	// import 'tw-elements';
 </script>
 
-<div class="flex space-x-2">
+<div class="flex">
 	<div class="relative w-full lg:w-8/12">
 		<div>
 			<!-- <img

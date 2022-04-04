@@ -9,6 +9,8 @@
 	import PackageStorageIcon from './PackageStorageIcon.svelte';
 	import HelpPurchaseIcon from './HelpPurchaseIcon.svelte';
 	import CustomsBrokerIcon from './CustomsBrokerIcon.svelte';
+	import PickupIcon from './PickupIcon.svelte';
+	import Pickup from './Pickup.svelte';
 
 	let activeTab = 'consolidation';
 	const tabList = [
@@ -16,7 +18,8 @@
 		{ name: 'Items Bonded', ref: 'bonded', content: ItemsBonded },
 		{ name: 'Package Storage', ref: 'storage', content: PackageStorage },
 		{ name: 'Help Purchase', ref: 'purchase', content: HelpPurchase },
-		{ name: 'Customs Broker', ref: 'customs', content: CustomsBrokerage }
+		{ name: 'Customs Broker', ref: 'customs', content: CustomsBrokerage },
+		{ name: 'Pickup', ref: 'pickup', content: Pickup }
 	];
 
 	function handleClick(list) {
@@ -24,10 +27,10 @@
 	}
 </script>
 
-<div class="bg-slate-100">
+<div class="bg-gray-100">
 	<section
 		aria-labelledby="features-heading"
-		class="max-w-7xl mx-auto py-4 sm:px-2 lg:px-8 lg:py-12"
+		class="max-w-7xl mx-auto py-4 sm:px-2 lg:px-8 lg:py-20 "
 	>
 		<div class="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
 			<!-- Heading -->
@@ -44,15 +47,15 @@
 			<div class="mt-4">
 				<div class="-mx-4 flex overflow-x-auto sm:mx-0">
 					<div class="flex-auto px-4 border-b border-gray-200 sm:px-0">
-						<div class="-mb-px flex space-x-10" aria-orientation="horizontal" role="tablist">
+						<div class="-mb-px flex justify-between" aria-orientation="horizontal" role="tablist">
 							{#each tabList as list}
 								<button
 									on:click={() => handleClick(list)}
 									type="button"
-									class="text-tiny px-2 md:px-6 flex items-center py-3 capitalize {activeTab ===
+									class="flex flex-col text-tiny px-2 md:px-6 items-center py-4 capitalize justify-center font-semibold {activeTab ===
 									list.ref
-										? 'text-pblue-800 border-b-2 border-pblue-800 font-bold'
-										: 'text-gray-700 hover:text-pblue-800 font-semibold'}"
+										? 'text-pblue-900 '
+										: 'text-slate-700 hover:text-pblue-800'}"
 								>
 									{#if list.ref === 'consolidation'}
 										<ConsolidationIcon />
@@ -62,8 +65,10 @@
 										<PackageStorageIcon />
 									{:else if list.ref === 'purchase'}
 										<HelpPurchaseIcon />
-									{:else}
+									{:else if list.ref === 'customs'}
 										<CustomsBrokerIcon />
+									{:else}
+										<PickupIcon />
 									{/if}
 									{list.name}
 								</button>
@@ -84,8 +89,10 @@
 					<PackageStorage />
 				{:else if activeTab === 'purchase'}
 					<HelpPurchase />
-				{:else}
+				{:else if activeTab === 'customs'}
 					<CustomsBrokerage />
+				{:else}
+					<Pickup />
 				{/if}
 			</div>
 		</div>

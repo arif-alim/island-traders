@@ -13,7 +13,7 @@
 			</p>
 		</div>
 		<div class="lg:col-span-4">
-			<div class="p-2.5 bg-white rounded-lg mb-8 hover:bg-blue-600 transition">
+			<div class="p-2.5 bg-white rounded-lg mb-8 transition">
 				<div class="overflow-hidden aspect-w-2 aspect-h-1">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img

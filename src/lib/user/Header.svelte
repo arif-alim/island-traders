@@ -19,7 +19,7 @@
 		<div class="relative flex justify-between h-14 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex-shrink-0 flex items-center">
-					<a href="/user/dashboard" sveltekit:prefetch>
+					<a href="/" sveltekit:prefetch>
 						<img src={logo} alt={logoAlt} class="h-10 w-auto" />
 					</a>
 				</div>
@@ -42,7 +42,7 @@
 			<div
 				class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
 			>
-				<button type="button" class="p-1 rounded-full text-gray-200 hover:text-white ">
+				<button type="button" class="p-1 rounded-full text-slate-500 hover:text-white ">
 					<span class="sr-only">View notifications</span>
 					<!-- Heroicon name: outline/bell -->
 					<svg

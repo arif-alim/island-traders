@@ -60,13 +60,14 @@ module.exports = {
 			tiny: '0.925rem',
 			tinyxl: '0.965rem',
 			base: '1rem',
+			md: '1.075rem',
 			lg: '1.125rem',
 			xl: '1.25rem',
-			'2xl': '1.375rem',
-			'3xl': '1.875rem',
-			'4xl': '2.25rem',
-			'5xl': '3rem',
-			'6xl': '4rem'
+			'2xl': '1.5rem',
+			'3xl': '1.75rem',
+			'4xl': '2rem',
+			'5xl': '2.5rem',
+			'6xl': '3rem'
 		},
 		extend: {
 			dropShadow: {

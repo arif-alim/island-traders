@@ -1,175 +1,237 @@
-<div class="mx-auto max-w-7xl">
-	<div class="grid grid-cols-1 md:grid-cols-12 h-[200px] md:h-[350px] lg:h-[400px]">
-		<div class="col-span-1 sm:col-span-4 z-[1]">
-			<div class="lg:pt-12 pb-4 px-4 sm:px-8 ">
-				<h1
-					class="bg-gradient-to-r from-slate-800 to-pblue-700 bg-clip-text text-transparent text-3xl md:text-3xl lg:text-4xl mt-4 tracking-tight font-extrabold sm:mt-5 sm:text-4xl lg:mt-6 xl:text-4xxl capitalize"
-				>
-					Our Services
-				</h1>
-				<p class="prose text-sm sm:text-lg font-semibold text-slate-700 mt-2">
-					All-inclusive and affordable vacations
-				</p>
-			</div>
-		</div>
+<script>
+	import ServicesHero from '../components/public/ServicesHero.svelte';
+</script>
 
-		<div class="hidden sm:flex col-span-8 w-[67vw]">
-			<div class="relative pb-8 bg-white sm:pb-16 md:pb-20">
-				<svg
-					class="block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-					fill="currentColor"
-					viewBox="0 0 100 100"
-					preserveAspectRatio="none"
-					aria-hidden="true"
-				>
-					<polygon points="50,0 100,0 50,100 0,100" />
-				</svg>
-			</div>
-			<div class="-mt-40 lg:-mt-10">
-				<img
-					class="object-cover sm:h-72 md:h-1/2 lg:block lg:w-full lg:h-full"
-					src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-					alt=""
-				/>
-			</div>
-		</div>
-	</div>
-</div>
+<ServicesHero />
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative py-12 px-4 sm:px-6 lg:pt-32 lg:pb-28 lg:px-8">
-	<div class="absolute inset-0">
-		<div class="bg-white h-1/3 sm:h-2/3" />
-	</div>
+<div class="relative py-12 px-4 lg:py-16 ">
 	<div class="relative max-w-7xl mx-auto">
-		<div class="text-center">
-			<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Our Services</h2>
-			<p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque,
-				ducimus sed.
-			</p>
+		<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+			Ship, shop and save with ease
+		</h2>
+		<p class="mt-3 max-w-4xl text-md text-slate-900 sm:mt-4">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque,
+			ducimus sed.
+		</p>
+		<div
+			class="mt-12 max-w-lg mx-auto grid gap-x-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
+		>
+			<!-- Consolidation Service -->
+			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+				<a href="/consolidation" sveltekit:prefetch class="block">
+					<div class="flex-shrink-0">
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/consolidation.jpg "
+							alt=""
+						/>
+					</div>
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-pblue-900">Save money with us</p>
+							<p class="text-lg font-bold text-gray-900 hover:text-pblue-700 mt-1">
+								Package Consolidation
+							</p>
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								Consolidation is the process of combining multiple orders into one so all of your
+								packages will be shipped together. Let’s say you buy a smartphone from Amazon and a
+								pair of sneakers from Foot Locker; we will combine both orders together to be
+								treated as a single shipment (*FREE of charge) so that you will receive both
+								packages together saving you time and money.
+							</p>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/consolidation"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Bonding items service -->
+			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+				<a href="bond" sveltekit:prefetch class="block">
+					<div class="flex-shrink-0">
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/items-bonded.jpg "
+							alt=""
+						/>
+					</div>
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-purple-900">Secure your items</p>
+							<p class="text-lg font-bold text-gray-900 hover:text-fuchsia-700 mt-1">
+								Bonding Items
+							</p>
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								iSLAND tRADERS recognizes the challenges businesses face to bring in their items
+								BONDED. We handle all of your paperwork and get your items to you in a timely
+								manner.
+							</p>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/bond"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Bonding items service -->
+			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+				<a href="/storage" sveltekit:prefetch class="block">
+					<div class="flex-shrink-0">
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/packages-storage.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-purple-900">Processed & Stored</p>
+							<p class="text-lg font-bold text-gray-900 hover:text-emerald-700 mt-1">
+								Package Storage
+							</p>
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								If you or someone you know are travelling to South Florida, you can now pick up your
+								stuff up from our warehouse directly and use your $500 Bahamas Customs duty
+								exemption! The fees associated with this service will be a $25.00 In/Out service Fee
+								and additional charges based on the size (dimensional weight = L x W x H /139) of
+								the items at $0.15 per pound. Anything over 100lbs will be billed at $0.10 per
+								pound. Your fees will have to be paid before we release your items from your USA
+								warehouse unit.
+							</p>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/storage"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
-		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+		<div
+			class="mt-12 max-w-lg mx-auto grid gap-x-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
+		>
+			<!-- Bonding items service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-pgreen-900">
-							<a href="#" class="hover:underline"> Helping you save money </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Package Consolidation</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium
-								praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
-							</p>
-						</a>
+				<a href="/purchase" sveltekit:prefetch class="block">
+					<div class="flex-shrink-0">
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/help-purchase.jpg"
+							alt=""
+						/>
 					</div>
-				</div>
-			</div>
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Article </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium
-								praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-rose-700">Financial Support</p>
+
+							<p class="text-lg font-bold text-gray-900 hover:text-rose-700 mt-1">
+								Help with Purchases
 							</p>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Article </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium
-								praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								NO credit card or computer? We will be your personal online shopper! Stop by and
+								show one of our friendly staff members what you want and we will get it for you for
+								a minimal fee of $10 or 15% of the cost of your items (whichever is greater)
 							</p>
-						</a>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/purchase"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="mt-12 max-w-lg mx-auto grid gap-x-8 lg:grid-cols-2 lg:max-w-none">
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Article </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium
-								praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
-							</p>
-						</a>
-					</div>
-				</div>
+				</a>
 			</div>
 
+			<!-- Bonding items service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<div class="flex-shrink-0">
-					<img
-						class="h-48 w-full object-cover"
-						src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-						alt=""
-					/>
-				</div>
-				<div class="flex-1 bg-white p-6 flex flex-col justify-between">
-					<div class="flex-1">
-						<p class="text-sm font-medium text-indigo-600">
-							<a href="#" class="hover:underline"> Video </a>
-						</p>
-						<a href="#" class="block mt-2">
-							<p class="text-xl font-semibold text-gray-900">
-								How to use search engine optimization to drive sales
-							</p>
-							<p class="mt-3 text-base text-gray-500">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores
-								porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio
-								animi., tempore temporibus quo laudantium.
-							</p>
-						</a>
+				<a href="/pickup" sveltekit:prefetch class="block mt-1">
+					<div class="flex-shrink-0">
+						<img class="h-48 w-full object-cover" src="/images/public/services/pickup.jpg" alt="" />
 					</div>
-				</div>
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-amber-700">Easily access packages</p>
+							<p class="text-lg font-bold text-gray-900 hover:text-amber-700 mt-1">
+								Package Pickup
+							</p>
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								iSLAND tRADERS SHOP & SHIP is a one stop shop. We don’t let our clients waste their
+								time and energy running up and down dealing with Customs. We will handle your
+								brokerage work for you and we won’t charge you an arm and a leg to do so. We only
+								provide customs brokerage services for customers who utilized use our shipping
+								services.
+							</p>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/pickup"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Bonding items service -->
+			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+				<a href="/customs" sveltekit:prefetch class="block mt-1">
+					<div class="flex-shrink-0">
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/customs-brokerage.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+						<div class="flex-1">
+							<p class="text-sm font-medium text-purple-900">We take care of customs</p>
+							<p class="text-lg font-bold text-gray-900 hover:text-emerald-700 mt-1">
+								Customs Borkerage
+							</p>
+							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
+								Otherwise known as “CONSOLIMADATION”, Consolidation is the process of combining
+								multiple orders into one so all of your packages will be shipped together. Let’s say
+								you buy a smartphone from Amazon and a pair of sneakers from Foot Locker; we will
+								combine both orders together to be treated as a single shipment (*FREE of charge) so
+								that you will receive both packages together saving you time and money.
+							</p>
+						</div>
+						<div class="mt-4 flex w-full">
+							<a
+								href="/customs"
+								type="button"
+								sveltekit:prefetch
+								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+								>View Service
+							</a>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

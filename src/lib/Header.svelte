@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import TopBar from '../components/public/TopBar.svelte';
 	import logo from '$lib/islandtraders-logodark.svg';
+	import DropdownCaret from '../components/public/DropdownCaret.svelte';
 
 	let logoAlt = 'Island Traders Logo';
 
@@ -9,8 +10,13 @@
 		{ name: 'Home', href: '/' },
 		{ name: 'About', href: '/about-us' },
 		{ name: 'Services', href: '/services' },
-		{ name: 'Rates', href: '/rates' },
-		{ name: 'Estimator', href: '/estimator' }
+		{ name: 'Rates', href: '/rates' }
+	];
+
+	const Rates = [
+		{ name: 'Rates by Island', href: '/island-rates' },
+		{ name: 'Rate Estimator', href: '/rate-estimator' },
+		{ name: 'Duties on items', href: '/duties' }
 	];
 
 	const rightRoutes = [
@@ -26,7 +32,7 @@
 	</nav>
 </div>
 <header class="bg-white relative shadow-sm">
-	<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+	<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-4">
 		<div class="relative flex justify-between h-16 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex-shrink-0 flex items-center">
@@ -34,18 +40,44 @@
 						<img src={logo} alt={logoAlt} class="h-14 w-auto py-1" />
 					</a>
 				</div>
-				<div class="hidden sm:ml-12 lg:flex sm:space-x-8">
+				<div class="hidden sm:ml-12 lg:flex sm:space-x-8 items-center">
 					{#each leftRoutes as route}
-						<a
-							href={route.href}
-							sveltekit:prefetch
-							class="inline-flex items-center text-xb tracking-tight uppercase
-							{route.href === $page.url.pathname
-								? ' text-sky-900 font-bold'
-								: ' text-gray-800 hover:text-sky-900 font-semibold hover:font-bold'}"
-						>
-							{route.name}
-						</a>
+						{#if route.name === 'Rates'}
+							<a
+								class="dropdown-toggle cursor-pointer transition duration-150 ease-in-out inline-flex items-center text-xb tracking-tight uppercase text-gray-800 hover:text-blue-900 font-bold"
+								type="button"
+								id="dropdownMenuButton1"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Rates
+								<DropdownCaret />
+							</a>
+							<ul
+								class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 m-0 bg-clip-padding border-none"
+								aria-labelledby="dropdownMenuButton1"
+							>
+								{#each Rates as rate}
+									<li>
+										<a
+											class="dropdown-item text-xb py-2.5 px-6 font-semibold block w-full  whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100 mt-1 hover:text-blue-900"
+											href={rate.href}
+										>
+											{rate.name}
+										</a>
+									</li>
+								{/each}
+							</ul>
+						{:else}
+							<a
+								href={route.href}
+								sveltekit:prefetch
+								class="inline-flex items-center text-xb tracking-tight uppercase font-bold cursor-pointer
+						{route.href === $page.url.pathname ? ' text-sky-900' : ' text-gray-800 hover:text-blue-900 '}"
+							>
+								{route.name}
+							</a>
+						{/if}
 					{/each}
 				</div>
 			</div>

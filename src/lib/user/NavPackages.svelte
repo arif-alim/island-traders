@@ -18,9 +18,9 @@
 <!-- Page Header -->
 <header id="page-header" class="flex flex-none items-center bg-gray-800 z-1">
 	<div class="container xl:max-w-7xl mx-auto px-4 lg:px-8">
-		<div class="flex justify-between py-4">
+		<div class="flex justify-between pt-8 pb-3">
 			<!-- Left Section -->
-			<div class="flex items-center space-x-2 lg:space-x-6">
+			<div class="flex items-center space-x-2 ">
 				<nav class="hidden lg:flex lg:items-center lg:space-x-2">
 					{#each routes as route}
 						<a
@@ -86,7 +86,7 @@
 					<h1 class="text-2xl font-semibold text-white">{title}</h1>
 				</div>
 			</div>
-			<div class="flex items-center border-gray-700 justify-end">
+			<div class="flex items-center border-gray-700 justify-end -mt-1">
 				{#if $page.url.pathname === '/user/packages'}
 					<a
 						href="javascript:void(0)"
