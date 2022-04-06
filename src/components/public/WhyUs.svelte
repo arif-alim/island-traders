@@ -1,6 +1,6 @@
 <!-- Features Section: Modern Alternate With Icons -->
 <div class="bg-white">
-	<div class="space-y-12 container xl:max-w-7xl mx-auto px-4 py-6 pt-12 lg:px-8 lg:pt-24 ">
+	<div class="space-y-12 container xl:max-w-8xl mx-auto px-4 py-6 pt-12 lg:px-8 lg:pt-24 ">
 		<!-- Heading -->
 		<div class="max-w-4xl">
 			<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">

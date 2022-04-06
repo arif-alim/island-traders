@@ -6,7 +6,7 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative py-12 px-4 lg:py-16 ">
-	<div class="relative max-w-7xl mx-auto">
+	<div class="relative max-w-8xl mx-auto">
 		<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
 			Ship, shop and save with ease
 		</h2>

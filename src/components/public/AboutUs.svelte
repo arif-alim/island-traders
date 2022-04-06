@@ -1,6 +1,6 @@
-<section aria-labelledby="features-heading" class="max-w-7xl mx-auto py-4 sm:pb-12 sm:px-2 lg:px-8">
+<section aria-labelledby="features-heading" class="max-w-8xl mx-auto py-4 px-4 sm:pb-12">
 	<div class="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
-		<div class="max-w-7xl ">
+		<div class="max-w-8xl ">
 			<h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
 				Island Traders 242
 			</h2>

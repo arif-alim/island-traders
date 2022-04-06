@@ -18,7 +18,7 @@
 
 <!-- Page Header -->
 <header id="page-header" class="flex flex-none items-center bg-gray-800 z-1">
-	<div class="container xl:max-w-7xl mx-auto px-4 lg:px-8">
+	<div class="container xl:max-w-8xl mx-auto px-4 lg:px-8">
 		<div class="flex justify-between pt-8 pb-3">
 			<!-- Left Section -->
 			<div class="flex items-center space-x-2 ">
@@ -80,7 +80,7 @@
 
 <!-- Page Heading -->
 <div class="bg-gray-800 h-48">
-	<div class="container xl:max-w-7xl mx-auto px-4 lg:px-8">
+	<div class="container xl:max-w-8xl mx-auto px-4 lg:px-8">
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 border-t py-5 border-gray-700">
 			<div class="flex items-center border-gray-700">
 				<div class="grow">

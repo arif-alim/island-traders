@@ -1,7 +1,7 @@
 <div class="bg-white">
 	<div class="overflow-hidden">
 		<div class="bg-gradient-to-r from-slate-900 via-sky-900 to-amber-400">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="relative py-6 sm:py-28">
 					<div>
 						<h2

@@ -8,7 +8,7 @@
 	let activeTab = 'test';
 </script>
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20 lg:space-y-12">
+<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20 lg:space-y-12">
 	<!-- Heading -->
 	<div class="max-w-4xl">
 		<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">

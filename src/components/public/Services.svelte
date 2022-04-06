@@ -30,7 +30,7 @@
 <div class="bg-gray-100">
 	<section
 		aria-labelledby="features-heading"
-		class="max-w-7xl mx-auto py-4 sm:px-2 lg:px-8 lg:py-20 "
+		class="max-w-8xl mx-auto py-4 sm:px-2 lg:px-8 lg:py-20 "
 	>
 		<div class="max-w-2xl mx-auto px-4 lg:px-0 lg:max-w-none">
 			<!-- Heading -->

@@ -39,7 +39,7 @@
 
 <div class="bg-white">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
-	<div class="max-w-7xl mx-auto px-4">
+	<div class="max-w-8xl mx-auto px-4">
 		<!-- ====== Footer Section Start -->
 		<footer class="bg-white pt-12 mt-6 pb-4 relative z-10  ">
 			<div class="container">

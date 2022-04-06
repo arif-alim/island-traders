@@ -1,9 +1,9 @@
 <section
-	class="-mt-32 max-w-7xl mx-auto relative z-10 pb-12 sm:pb-12 px-4 "
+	class="-mt-32 max-w-8xl mx-auto relative z-10 pb-12 sm:pb-12 px-4 "
 	aria-labelledby="contact-heading"
 >
 	<h2 class="sr-only" id="contact-heading">Vision</h2>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-20 lg:gap-8 sm:px-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-20 lg:gap-8 ">
 		<div class="flex flex-col rounded-lg shadow-lg bg-white overflow-hidden">
 			<div
 				class="bg-cover mb-8"

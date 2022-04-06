@@ -558,7 +558,7 @@
 				</svg>
 			</button>
 			<!-- Search bar -->
-			<div class="flex-1 px-4 flex justify-between sm:px-6 lg:max-w-7xl lg:mx-auto lg:px-8">
+			<div class="flex-1 px-4 flex justify-between sm:px-6 lg:max-w-8xl lg:mx-auto lg:px-8">
 				<div class="flex-1 flex">
 					<form class="w-full flex md:ml-0" action="#" method="GET">
 						<label for="search-field" class="sr-only">Search</label>
@@ -657,7 +657,7 @@
 		<main class="flex-1 pb-8">
 			<!-- Page header -->
 			<div class="bg-white shadow">
-				<div class="px-4 sm:px-6 lg:max-w-7xl lg:mx-auto lg:px-8">
+				<div class="px-4 sm:px-6 lg:max-w-8xl lg:mx-auto lg:px-8">
 					<div
 						class="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-gray-200"
 					>
@@ -744,7 +744,7 @@
 			</div>
 
 			<div class="mt-8">
-				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 					<h2 class="text-lg leading-6 font-medium text-gray-900">Overview</h2>
 					<div class="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 						<!-- Card -->
@@ -792,7 +792,7 @@
 				</div>
 
 				<h2
-					class="max-w-7xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8"
+					class="max-w-8xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8"
 				>
 					Recent activity
 				</h2>
@@ -868,7 +868,7 @@
 
 				<!-- Activity table (small breakpoint and up) -->
 				<div class="hidden sm:block">
-					<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 						<div class="flex flex-col mt-2">
 							<div
 								class="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg"

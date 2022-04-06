@@ -8,7 +8,7 @@
 <FaqHero />
 
 <div class="bg-gray-50">
-	<div class="mx-auto max-w-7xl">
+	<div class="mx-auto max-w-8xl">
 		<FaqServices />
 	</div>
 </div>

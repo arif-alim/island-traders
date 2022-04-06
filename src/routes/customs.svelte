@@ -1,5 +1,5 @@
 <div class="bg-gray-900">
-	<div class="mx-auto max-w-7xl">
+	<div class="mx-auto max-w-8xl">
 		<div class="grid grid-cols-1 sm:grid-cols-12">
 			<div class="col-span-1 flex sm:col-span-6 w-5/6 items-center">
 				<div class="py-12 sm:py-4 px-4 sm:px-8">

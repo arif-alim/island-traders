@@ -3,7 +3,7 @@
 </script>
 
 <!-- <div class="relative bg-gradient-to-r from-slate-900 to-blue-700 px-4">
-	<div class="mx-auto max-w-7xl flex h-72 lg:h-[350px] items-center">
+	<div class="mx-auto max-w-8xl flex h-72 lg:h-[350px] items-center">
 		<div class="flex-col">
 			<p class="mt-2 text-white text-3xl font-extrabold sm:text-4xl">Our Services</p>
 			<p class="mt-3 text-md text-gray-200 font-light ">
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div
-		class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-3 xl:grid-flow-col-dense xl:gap-x-8"
+		class="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-8xl lg:px-8 xl:grid xl:grid-cols-3 xl:grid-flow-col-dense xl:gap-x-8"
 	>
 		<div
 			class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 col-span-2 xl:pb-24 prose max-w-prose"
