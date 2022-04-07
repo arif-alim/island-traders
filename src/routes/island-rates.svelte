@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import IslandRatesHero from '../components/public/IslandRatesHero.svelte';
 	import GrandBahama from '../components/public/rates/GrandBahama.svelte';
 	import NewProvidence from '../components/public/rates/NewProvidence.svelte';
@@ -8,6 +10,7 @@
 	import Exuma from '../components/public/rates/Exuma.svelte';
 	import CatIsland from '../components/public/rates/CatIsland.svelte';
 	import Bimini from '../components/public/rates/Bimini.svelte';
+	import LottieRates from '../components/public/lottie/LottieRates.svelte';
 
 	let activeTab = 'grand-bahama';
 	const islands = [
@@ -22,82 +25,75 @@
 	];
 
 	function handleClick(list) {
-
 		activeTab = list.ref;
 	}
 </script>
 
 <IslandRatesHero />
 
-<div class="relative py-12 px-4 lg:py-16 ">
-	<div class="relative max-w-8xl mx-auto">
-    <div class="flex flex-wrap">
-				<div class="w-full">
-					<div class=" mb-6 lg:mb-10 max-w-[520px]">
-						<span class="font-normal text-tiny block text-rose-600"> FAQs </span>
-						<h2
-							class="
-                  font-extrabold
-                  text-2xl
-                  sm:text-4xl
-                  text-gray-900
-                  mb-4
-                  "
-						>
-							Frequently Asked Questions
-						</h2>
-						<p class="sm:text-base text-tiny text-body-color">
-							See below for specific answers to frequently asked questions.
-						</p>
-					</div>
-				</div>
+<div class="bg-white">
+	<div class="space-y-12 max-w-8xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+		<div class="inline-flex justify-between">
+			<div class="flex-col">
+				<h2 class="font-extrabold	text-2xl sm:text-4xl text-gray-900 mb-4 tracking-tight">
+					See Rates
+				</h2>
+				<p class="sm:text-base text-tiny text-body-color">
+					You can easily navigate from island to island for our rates
+				</p>
 			</div>
-		<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 px-4" id="pills-tabFill" role="tablist">
-      {#each islands as list}
-      <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-        <button
-          on:click={() => handleClick(list)}
-          type="button"
-          class="nav-link
+
+			<!-- <div class="flex">
+				<LottieRates />
+			</div> -->
+		</div>
+		<ul
+			class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 px-4"
+			id="pills-tabFill"
+			role="tablist"
+		>
+			{#each islands as list}
+				<li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+					<button
+						on:click={() => handleClick(list)}
+						type="button"
+						class="nav-link
             w-full
-            block
-            font-medium
-            text-xs
+            font-semibold
+            text-xb
             leading-tight
             uppercase
             rounded
             px-6
             py-3
-            focus:outline-none focus:ring-0 {activeTab ===
-          list.ref
-            ? 'active'
-            : 'text-slate-700 hover:text-pblue-800'}"
-        >
-          {list.name}
-        </button>
-      </li>
-      {/each}
-      
-    </ul>
-    <div class="tab-content" id="pills-tabContentFill">
-      {#if activeTab === 'grand-bahama'}
-					<GrandBahama />
-				{:else if activeTab === 'new-providence'}
-					<NewProvidence />
-				{:else if activeTab === 'inagua'}
-					<Inagua />
-				{:else if activeTab === 'long-island'}
-					<LongIsland />
-				{:else if activeTab === 'harbour-island'}
-					<HarbourIsland />
-				{:else if activeTab === 'exuma'}
-					<Exuma />
-				{:else if activeTab === 'cat-island'}
-					<CatIsland />
-				{:else}
-					<Bimini />
-				{/if}
-    </div>
+            focus:outline-none focus:ring-0 {activeTab === list.ref
+							? 'active'
+							: 'text-slate-700 hover:text-pblue-800'}"
+					>
+						{list.name}
+					</button>
+				</li>
+			{/each}
+		</ul>
+		<div class="tab-content" id="pills-tabContentFill">
+			{#if activeTab === 'grand-bahama'}
+				<GrandBahama />
+			{:else if activeTab === 'new-providence'}
+				<NewProvidence />
+			{:else if activeTab === 'inagua'}
+				<Inagua />
+			{:else if activeTab === 'long-island'}
+				<LongIsland />
+			{:else if activeTab === 'harbour-island'}
+				<HarbourIsland />
+			{:else if activeTab === 'exuma'}
+				<Exuma />
+			{:else if activeTab === 'cat-island'}
+				<CatIsland />
+			{:else}
+				<Bimini />
+			{/if}
+		</div>
 	</div>
 </div>
 
