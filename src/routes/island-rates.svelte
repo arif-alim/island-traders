@@ -38,7 +38,7 @@
 				<h2 class="font-extrabold	text-2xl sm:text-4xl text-gray-900 mb-4 tracking-tight">
 					See Rates
 				</h2>
-				<p class="sm:text-base text-tiny text-body-color">
+				<p class="sm:text-base text-tiny">
 					You can easily navigate from island to island for our rates
 				</p>
 			</div>

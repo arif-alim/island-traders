@@ -32,7 +32,10 @@
   "type": "module",
   "dependencies": {
     "@lottiefiles/svelte-lottie-player": "^0.2.0",
+    "axios": "^0.26.1",
     "flickity": "^3.0.0",
+    "svelte-multistep-form": "^0.0.6",
+    "svelte-select": "^4.4.7",
     "swiper": "^8.0.7"
   }
 }

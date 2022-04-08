@@ -7,7 +7,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative py-12 px-4 lg:py-16 ">
 	<div class="relative max-w-8xl mx-auto">
-		<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+		<h2 class="text-3xl tracking-tight font-extrabold text-slate-900 sm:text-4xl">
 			Ship, shop and save with ease
 		</h2>
 		<p class="mt-3 max-w-4xl text-md text-slate-900 sm:mt-4">
@@ -29,8 +29,8 @@
 					</div>
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
-							<p class="text-sm font-medium text-pblue-900">Save money with us</p>
-							<p class="text-lg font-bold text-gray-900 hover:text-pblue-700 mt-1">
+							<p class="text-sm font-medium text-blue-900">Save money with us</p>
+							<p class="text-lg font-bold text-slate-900 hover:text-blue-700 mt-1">
 								Package Consolidation
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -46,8 +46,11 @@
 								href="/consolidation"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-blue-900"
+							>
+								View our Package Consolidation Services <span aria-hidden="true" class="ml-1"
+									>&rarr;</span
+								>
 							</a>
 						</div>
 					</div>
@@ -66,7 +69,7 @@
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
 							<p class="text-sm font-medium text-purple-900">Secure your items</p>
-							<p class="text-lg font-bold text-gray-900 hover:text-fuchsia-700 mt-1">
+							<p class="text-lg font-bold text-slate-900 hover:text-purple-700 mt-1">
 								Bonding Items
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -80,8 +83,9 @@
 								href="/bond"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-purple-900"
+							>
+								View our Item Bond Services <span aria-hidden="true" class="ml-1">&rarr;</span>
 							</a>
 						</div>
 					</div>
@@ -99,8 +103,8 @@
 					</div>
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
-							<p class="text-sm font-medium text-purple-900">Processed & Stored</p>
-							<p class="text-lg font-bold text-gray-900 hover:text-emerald-700 mt-1">
+							<p class="text-sm font-medium text-emerald-900">Processed & Stored</p>
+							<p class="text-lg font-bold text-slate-900 hover:text-emerald-700 mt-1">
 								Package Storage
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -118,8 +122,10 @@
 								href="/storage"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-emerald-900"
+							>
+								View our Package Storage Services <span aria-hidden="true" class="ml-1">&rarr;</span
+								>
 							</a>
 						</div>
 					</div>
@@ -143,7 +149,7 @@
 						<div class="flex-1">
 							<p class="text-sm font-medium text-rose-700">Financial Support</p>
 
-							<p class="text-lg font-bold text-gray-900 hover:text-rose-700 mt-1">
+							<p class="text-lg font-bold text-slate-900 hover:text-rose-700 mt-1">
 								Help with Purchases
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -157,24 +163,26 @@
 								href="/purchase"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-rose-900"
+							>
+								View our Purchase Support Services <span aria-hidden="true" class="ml-1"
+									>&rarr;</span
+								>
 							</a>
 						</div>
 					</div>
 				</a>
 			</div>
-
-			<!-- Bonding items service -->
+			<!-- Package Pickup Service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<a href="/pickup" sveltekit:prefetch class="block mt-1">
+				<a href="/purchase" sveltekit:prefetch class="block">
 					<div class="flex-shrink-0">
 						<img class="h-48 w-full object-cover" src="/images/public/services/pickup.jpg" alt="" />
 					</div>
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
 							<p class="text-sm font-medium text-amber-700">Easily access packages</p>
-							<p class="text-lg font-bold text-gray-900 hover:text-amber-700 mt-1">
+							<p class="text-lg font-bold text-slate-900 hover:text-amber-700 mt-1">
 								Package Pickup
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -190,16 +198,18 @@
 								href="/pickup"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-amber-900"
+							>
+								View our Package Pickup Services <span aria-hidden="true" class="ml-1">&rarr;</span>
 							</a>
 						</div>
 					</div>
 				</a>
 			</div>
-			<!-- Bonding items service -->
+
+			<!-- Customs Broker Service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<a href="/customs" sveltekit:prefetch class="block mt-1">
+				<a href="/customs" sveltekit:prefetch class="block">
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
@@ -209,8 +219,8 @@
 					</div>
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
-							<p class="text-sm font-medium text-purple-900">We take care of customs</p>
-							<p class="text-lg font-bold text-gray-900 hover:text-emerald-700 mt-1">
+							<p class="text-sm font-medium text-fuchsia-900">We take care of customs</p>
+							<p class="text-lg font-bold text-slate-900 hover:text-fuchsia-700 mt-1">
 								Customs Borkerage
 							</p>
 							<p class="mt-3 text-tinyxl text-slate-600 line-clamp-3">
@@ -221,13 +231,14 @@
 								that you will receive both packages together saving you time and money.
 							</p>
 						</div>
-						<div class="mt-4 flex w-full">
+						<div class="mt-4 flex ">
 							<a
-								href="/customs"
+								href="/purchase"
 								type="button"
 								sveltekit:prefetch
-								class="w-full text-center items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-								>View Service
+								class="text-sb font-bold text-slate-900 hover:text-fuchsia-900"
+							>
+								View our Customs Broker Services <span aria-hidden="true" class="ml-1">&rarr;</span>
 							</a>
 						</div>
 					</div>
