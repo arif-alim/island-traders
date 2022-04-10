@@ -7,7 +7,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative py-12 px-4 lg:py-16 ">
 	<div class="relative max-w-8xl mx-auto">
-		<h2 class="text-3xl tracking-tight font-extrabold text-slate-900 sm:text-4xl">
+		<h2 class="text-2xl tracking-tight font-extrabold text-slate-900 sm:text-3xl">
 			Ship, shop and save with ease
 		</h2>
 		<p class="mt-3 max-w-4xl text-md text-slate-900 sm:mt-4">
@@ -18,12 +18,12 @@
 			class="mt-12 max-w-lg mx-auto grid gap-x-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
 		>
 			<!-- Consolidation Service -->
-			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<a href="/consolidation" sveltekit:prefetch class="block">
+			<div class="flex flex-col rounded-lg shadow-lgs overflow-hidden">
+				<a href="/consolidation" class="block cursor-pointer">
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
-							src="/images/public/services/consolidation.jpg "
+							src="/images/public/services/consolidation/consolidation.jpg "
 							alt=""
 						/>
 					</div>
@@ -62,7 +62,7 @@
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
-							src="/images/public/services/items-bonded.jpg "
+							src="/images/public/services/bond/items-bonded.jpg "
 							alt=""
 						/>
 					</div>
@@ -97,7 +97,7 @@
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
-							src="/images/public/services/packages-storage.jpg"
+							src="/images/public/services/storage/packages-storage.jpg"
 							alt=""
 						/>
 					</div>
@@ -137,11 +137,11 @@
 		>
 			<!-- Bonding items service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<a href="/purchase" sveltekit:prefetch class="block">
+				<a href="/purchase" sveltekit:prefetch class="block cursor-pointer">
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
-							src="/images/public/services/help-purchase.jpg"
+							src="/images/public/services/purchase/help-purchase.jpg"
 							alt=""
 						/>
 					</div>
@@ -163,7 +163,7 @@
 								href="/purchase"
 								type="button"
 								sveltekit:prefetch
-								class="text-sb font-bold text-slate-900 hover:text-rose-900"
+								class="text-sb font-bold text-slate-900 hover:text-rose-900 cursor-pointer"
 							>
 								View our Purchase Support Services <span aria-hidden="true" class="ml-1"
 									>&rarr;</span
@@ -175,9 +175,13 @@
 			</div>
 			<!-- Package Pickup Service -->
 			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-				<a href="/purchase" sveltekit:prefetch class="block">
+				<a href="/purchase" sveltekit:prefetch class="block cursor-pointer">
 					<div class="flex-shrink-0">
-						<img class="h-48 w-full object-cover" src="/images/public/services/pickup.jpg" alt="" />
+						<img
+							class="h-48 w-full object-cover"
+							src="/images/public/services/pickup/pickup.jpg"
+							alt=""
+						/>
 					</div>
 					<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 						<div class="flex-1">
@@ -213,7 +217,7 @@
 					<div class="flex-shrink-0">
 						<img
 							class="h-48 w-full object-cover"
-							src="/images/public/services/customs-brokerage.jpg"
+							src="/images/public/services/customs/customs-brokerage.jpg"
 							alt=""
 						/>
 					</div>
@@ -233,7 +237,7 @@
 						</div>
 						<div class="mt-4 flex ">
 							<a
-								href="/purchase"
+								href="/customs"
 								type="button"
 								sveltekit:prefetch
 								class="text-sb font-bold text-slate-900 hover:text-fuchsia-900"

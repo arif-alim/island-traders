@@ -9,6 +9,7 @@
 	import EstDimensionsIcon from '../components/icons/EstDimensionsIcon.svelte';
 	import EstDelivery from '../components/public/EstDelivery.svelte';
 	import EstDeliveryIcon from '../components/icons/EstDeliveryIcon.svelte';
+	import RateEstimatorHero from '../components/public/RateEstimatorHero.svelte';
 
 	let activeStep = 'step1';
 	const Steps = [
@@ -59,36 +60,33 @@
 	}
 </script>
 
+<RateEstimatorHero />
+
 <div class="bg-white">
-	<div class="space-y-12 max-w-8xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+	<div class="max-w-8xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
 		<div class="inline-flex justify-between">
 			<div class="flex-col space-y-4">
 				<h1 class="font-extrabold	text-2xl sm:text-4xl text-gray-900 tracking-tight">
-					Rate Estimator
+					Island Trader Rate Calculator
 				</h1>
 				<p class="sm:text-base text-tiny">
 					You can easily navigate from island to island for our rates
 				</p>
 			</div>
 		</div>
-		<ol
-			role="list"
-			class="rounded-t-md overflow-hidden lg:flex lg:border-l lg:border-r border-t lg:border-gray-200"
-		>
-			{#each Steps as step}
-				<li class="relative overflow-hidden lg:flex-1">
-					<div class="border border-gray-200 overflow-hidden border-b-0 rounded-t-md lg:border-0">
-						<button href="#" class="group" type="button" on:click={() => handleClick(step)}>
-							<span
-								class="absolute top-0 left-0 w-1 h-full bg-transparent group-hover:bg-gray-200 lg:w-full lg:h-1 lg:bottom-0 lg:top-auto"
-								aria-hidden="true"
-							/>
+		<div class="mt-12 ">
+			<ol
+				class="rounded-t-md overflow-hidden lg:flex lg:border-l lg:border-r border-t lg:border-gray-200"
+			>
+				{#each Steps as step}
+					<li class="relative overflow-hidden lg:flex-1">
+						<button class="group" type="button" on:click={() => handleClick(step)}>
 							<span class="px-6 py-5 flex text-sm font-medium items-center">
 								<span class="flex-shrink-0">
 									<span
-										class="w-12 h-12 flex items-center bg-white justify-center border-2 rounded-full {activeStep ===
+										class="w-12 h-12 flex items-center bg-white justify-center rounded-full {activeStep ===
 										step.ref
-											? ' bg-blue-800 text-white'
+											? ' bg-blue-700 text-white '
 											: 'border-gray-500 bg-white text-black'}"
 									>
 										{#if step.ref === 'step1'}
@@ -139,11 +137,11 @@
 								</svg>
 							</div>
 						{/if}
-					</div>
-				</li>
-			{/each}
-		</ol>
-		<div class="lg:border-l lg:border-r lg:border-b rounded-b">
+					</li>
+				{/each}
+			</ol>
+		</div>
+		<div class="bg-gray-50 border border-gray-200 p-4 mt-0">
 			{#if activeStep === 'step1'}
 				<EstLocation />
 			{:else if activeStep === 'step2'}

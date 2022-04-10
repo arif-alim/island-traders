@@ -1,34 +1,50 @@
-<div class="bg-gray-900">
-	<div class="mx-auto max-w-8xl">
-		<div class="grid grid-cols-1 sm:grid-cols-12">
-			<div class="col-span-1 flex sm:col-span-6 w-5/6 items-center">
-				<div class="py-12 sm:py-4 px-4 sm:px-8">
-					<div class="flex-col">
-						<h1 class="mt-2 text-white text-3xl font-extrabold sm:text-4xl">Customs</h1>
-						<h2 class="mt-3 text-lg text-gray-300 ">
-							We're focused on making your dream vacation. Find the right vacation and book with
-							confidence.
-						</h2>
+<script>
+	import CustomsHero from '../components/public/CustomsHero.svelte';
+</script>
+
+<CustomsHero />
+
+<div class="bg-white">
+	<div class="container px-4 py-12 sm:py-16 mx-auto xl:max-w-8xl">
+		<div class="xl:flex xl:items-center xL:-mx-4">
+			<div class="lg:w-1/2 ">
+				<div class="flex-col space-y-4">
+					<h1 class="font-extrabold	sm:text-3xl text-gray-900 tracking-tight">Your Items Bonded</h1>
+					<div class="prose">
+						<p class="sm:text-base text-tiny">
+							iSLAND tRADERS SHOP & SHIP is a one stop shop. We don’t let our clients waste their
+							time and energy running up and down dealing with Customs. We will handle your
+							brokerage work for you and we won’t charge you an arm and a leg to do so. We only
+							provide customs brokerage services for customers who utilized use our shipping
+							services.
+						</p>
+						<p class="sm:text-base text-tiny">
+							Recently, The Bahamas Customs Department has taken full advantage of the developing
+							relationship with the WCO. On March 22nd, 2018, a WCO training program was launched by
+							the Bahamas Customs & Excise Department. The Program, funded by the Inter-American
+							Development Bank, consists of 26 missions over a two-year period and comprises of
+							three components: organizational development, human resources and governance. Thus
+							far, courses such as Gulf CBR and Data Modeling have been offered. As the Bahamas aims
+							to join the World Trade Organization (WTO) within two years, this Program is also
+							intended to prepare the country for WTO accession.
+						</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="hidden sm:flex col-span-1 sm:col-span-6 h-[350px]">
-				<div class="relative">
-					<svg
-						class="block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-						fill="currentColor"
-						viewBox="0 0 100 100"
-						preserveAspectRatio="none"
-						aria-hidden="true"
-					>
-						<polygon points="50,0 100,0 50,100 0,100" />
-					</svg>
-				</div>
-				<div class="w-full">
+			<div class="grid grid-cols-1 gap-8 mt-8 lg:w-1/2 md:grid-cols-2">
+				<div class="aspect-w-2 aspect-h-3">
 					<img
-						class="object-cover h-full w-full"
-						src="/images/public/services/customs-brokerage.jpg"
+						class="object-cover rounded"
+						src="/images/public/services/customs/customs-1.jpg"
+						alt=""
+					/>
+				</div>
+
+				<div class="aspect-w-2 aspect-h-3">
+					<img
+						class="object-cover rounded"
+						src="/images/public/services/customs/customs-2.jpg"
 						alt=""
 					/>
 				</div>

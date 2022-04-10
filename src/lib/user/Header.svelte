@@ -1,4 +1,5 @@
 <script>
+	// @ts-ignore
 	import { page } from '$app/stores';
 	import logo from '$lib/islandtraders-logodark.svg';
 

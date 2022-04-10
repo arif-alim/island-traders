@@ -687,12 +687,12 @@ esbuild-android-arm64@0.14.27:
 
 esbuild-darwin-64@0.14.27:
   version "0.14.27"
-  resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.27.tgz#4dc7484127564e89b4445c0a560a3cb50b3d68e1"
+  resolved "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.14.27.tgz"
   integrity sha512-czw/kXl/1ZdenPWfw9jDc5iuIYxqUxgQ/Q+hRd4/3udyGGVI31r29LCViN2bAJgGvQkqyLGVcG03PJPEXQ5i2g==
 
 esbuild-darwin-arm64@0.14.27:
   version "0.14.27"
-  resolved "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.27.tgz"
+  resolved "https://registry.yarnpkg.com/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.27.tgz#469e59c665f84a8ed323166624c5e7b9b2d22ac1"
   integrity sha512-BEsv2U2U4o672oV8+xpXNxN9bgqRCtddQC6WBh4YhXKDcSZcdNh7+6nS+DM2vu7qWIWNA4JbRG24LUUYXysimQ==
 
 esbuild-freebsd-64@0.14.27:
@@ -1705,10 +1705,10 @@ svelte-multistep-form@^0.0.6:
   resolved "https://registry.npmjs.org/svelte-multistep-form/-/svelte-multistep-form-0.0.6.tgz"
   integrity sha512-PP07c9J2Kesd1q62DaM0sH2+07Vo0Qlb3Jv4uV/XIu7+lm9ihWB/1C0hIOHMF/OB45FGX1dBKWwRBPUWWpwt/A==
 
-svelte-select@^4.4.7:
-  version "4.4.7"
-  resolved "https://registry.yarnpkg.com/svelte-select/-/svelte-select-4.4.7.tgz#fc85414af070487d68e438f7249c653178860af3"
-  integrity sha512-fIf9Z8rPI6F8naHZ9wjXT0Pv5gLyhdHAFkHFJnCfVVfELE8e82uOoF0xEVQP6Kir+b4Q5yOvNAzZ61WbSU6A0A==
+svelte-simple-datatables@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.npmjs.org/svelte-simple-datatables/-/svelte-simple-datatables-0.2.3.tgz"
+  integrity sha512-WsWbB66KzvpYN9r9WpRgXthGejsH2QFJfoRw/ssKw81Fn659IBMVzAZtOojR5mgEDZ2j24j4BJvoThcH8DXxwA==
 
 svelte@^3.44.0:
   version "3.46.4"

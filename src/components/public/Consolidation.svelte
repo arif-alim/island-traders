@@ -11,11 +11,11 @@
 			</p>
 		</div>
 		<div class="lg:col-span-4">
-			<div class="p-2.5 bg-white rounded-lg mb- transition">
+			<div class="p-2.5 bg-white rounded-lg transition">
 				<div class="overflow-hidden aspect-w-2 aspect-h-1">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="/images/public/home/services/consolidation.jpg"
+						src="/images/public/services/consolidation/consolidation.jpg"
 						alt="Preview Feature Image"
 						class="rounded-lg object-cover"
 					/>

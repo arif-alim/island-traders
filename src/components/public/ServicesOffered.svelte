@@ -10,7 +10,7 @@
 				<div class="p-2 bg-white rounded-lg mb-8 hover:bg-blue-600 transition">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="/images/public/home/services/consolidation.jpg"
+						src="/images/public/home/services/consolidation/consolidation.jpg"
 						alt="Preview Feature Image"
 						class="rounded-lg"
 					/>

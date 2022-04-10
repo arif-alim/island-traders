@@ -42,7 +42,7 @@
 	<div class="flex items-center space-x-6">
 		<a href="#" class="text-xb text-white hover:text-slate-300">Sign in</a>
 		<a href="#" class="text-xb text-white hover:text-slate-300">Create an account</a>
-		<a href="/user" class="text-xb text-white hover:text-slate-300">User</a>
+		<a href="/user/dashboard" class="text-xb text-white hover:text-slate-300">User</a>
 		<a href="/admin" class="text-xb text-white hover:text-slate-300">Admin</a>
 	</div>
 </div>

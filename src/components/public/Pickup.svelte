@@ -5,11 +5,11 @@
 			<p class="mt-2  text-gray-700 prose max-w-3xl line-clamp-4">Content goes here</p>
 		</div>
 		<div class="lg:col-span-4">
-			<div class="p-2.5 bg-white rounded-lg mb- transition">
+			<div class="p-2.5 bg-white rounded-lg transition">
 				<div class="overflow-hidden aspect-w-2 aspect-h-1">
 					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img
-						src="/images/public/home/services/consolidation.jpg"
+						src="/images/public/services/pickup/pickup.jpg"
 						alt="Preview Feature Image"
 						class="rounded-lg object-cover"
 					/>
