@@ -80,17 +80,20 @@
 <!-- Page Heading -->
 <div class="bg-gray-800 h-48">
 	<div class="container xl:max-w-8xl mx-auto px-4 lg:px-8">
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 border-t py-5 border-gray-700">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 sm:border-t sm:py-5 border-gray-700 space-y-2 sm:space-y-0"
+		>
 			<div class="flex items-center border-gray-700">
 				<div class="grow">
 					<h1 class="text-2xl font-semibold text-white">{title}</h1>
 				</div>
 			</div>
-			<div class="flex items-center border-gray-700 justify-end -mt-1">
+			<!-- <div class="flex items-center border-gray-700 sm:justify-end sm:-mt-1">
 				{#if $page.url.pathname === '/user/packages'}
 					<a
 						href="javascript:void(0)"
-						class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
+						class="flex sm:flex-wrap sm:inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
+						on:click={() => handleContent('new-invoice')}
 					>
 						<svg
 							fill="currentColor"
@@ -103,10 +106,10 @@
 								clip-rule="evenodd"
 							/></svg
 						>
-						<span class="hidden sm:inline-block">New Project</span>
+						<span class="inline-block">New Incoming Package</span>
 					</a>
 				{/if}
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
