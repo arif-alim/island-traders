@@ -374,7 +374,7 @@
 												<select
 													id="message-type"
 													name="message-type"
-													class="-ml-px block w-full pl-3 pr-9 py-2 rounded-l-none rounded-r-md border border-gray-300 bg-white text-sl font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pblue-500 focus:border-pblue-500"
+													class="-ml-px block pl-3 pr-9 py-2 rounded-l-none rounded-r-md border border-gray-300 bg-white text-sl font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pblue-500 focus:border-pblue-500"
 												>
 													<option>Nema Forms</option>
 													<option>Permits (Drones, Cruising, etc.)</option>

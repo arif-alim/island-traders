@@ -27,9 +27,9 @@
 					<div class="flex items-center py-2 sm:py-2 ">
 						<div class="min-w-0 flex-1 flex items-center">
 							<div
-								class="min-w-0 flex-1 md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 "
+								class="min-w-0 flex-1 md:grid grid-cols-1 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 "
 							>
-								<div class="hidden md:block">
+								<div class="flex">
 									<div>
 										<p class="text-sl font-bold text-slate-800 truncate">Invoice Number:</p>
 										<p class="mt-2 flex items-center font-medium text-sm text-slate-600">
