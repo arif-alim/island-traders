@@ -49,7 +49,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="https://source.unsplash.com/bY4GXQKfZrA/160x160"
+								src="/images/user/packages/inc-pkg-0.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -57,7 +57,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="https://source.unsplash.com/bY4GXQKfZrA/160x160"
+								src="/images/user/packages/inc-pkg-1.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -65,7 +65,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="https://source.unsplash.com/bY4GXQKfZrA/160x160"
+								src="/images/user/packages/inc-pkg-2.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -73,7 +73,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="https://source.unsplash.com/bY4GXQKfZrA/160x160"
+								src="/images/user/packages/inc-pkg-3.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
