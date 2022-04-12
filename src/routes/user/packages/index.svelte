@@ -6,6 +6,9 @@
 	import StatusPending from '../../../components/user/StatusPending.svelte';
 	import StatusReady from '../../../components/user/StatusReady.svelte';
 	import StatusShipped from '../../../components/user/StatusShipped.svelte';
+	// New Invoice
+	import NewInvoice from '../../../components/user/NewInvoice.svelte';
+	import ViewPkgIcon from '../../../components/icons/ViewPkgIcon.svelte';
 	const activeList = '';
 	function handleClick(item) {
 		activeList = item.ref;
@@ -17,9 +20,9 @@
 </script>
 
 <div class="min-h-full">
-	<div class="max-w-8xl mx-auto px-2 py-1">
-		<div class="flex justify-between items-start">
-			<div class="mt-0 sm:text-left space-y-2 mb-6">
+	<div class="max-w-8xl mx-auto px-2">
+		<div class="flex justify-between items-center">
+			<div class="mt-0 sm:text-left ">
 				<div class="heading">
 					{#if content == 'current'}
 						<p class="text-md font-bold text-gray-900 sm:text-xl">View your incoming packages</p>
@@ -30,8 +33,7 @@
 				<div class="max-w-lg">
 					{#if content == 'current'}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-							incididunt ut labore et dolore magna aliqua.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit
 						</p>
 					{:else}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
@@ -44,7 +46,7 @@
 				{#if content == 'current'}
 					<a
 						href="javascript:void(0)"
-						class="flex sm:flex-wrap sm:inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
+						class="flex sm:flex-wrap sm:inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded border-indigo-700 bg-indigo-700 text-white hover:text-white hover:bg-indigo-800 hover:border-indigo-800 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-700 active:border-indigo-700"
 						on:click={() => handleContent('invoice')}
 					>
 						<svg
@@ -58,32 +60,22 @@
 								clip-rule="evenodd"
 							/></svg
 						>
-						<span class="inline-block">New Incoming Package</span>
+						<span class="inline-block w-48 text-center">Create New Invoice</span>
 					</a>
 				{:else}
 					<a
 						href="javascript:void(0)"
-						class="flex sm:flex-wrap sm:inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-5 text-sm rounded border-slate-700 bg-slate-700 text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:ring focus:ring-slate-500 focus:ring-opacity-50 active:bg-slate-700 active:border-slate-700"
+						class="flex sm:flex-wrap sm:inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded border-slate-700 bg-slate-700 text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:ring focus:ring-slate-500 focus:ring-opacity-50 active:bg-slate-700 active:border-slate-700"
 						on:click={() => handleContent('current')}
 					>
-						<svg
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-							class="sm:opacity-50 hi-solid hi-plus inline-block w-5 h-5"
-							><path
-								fill-rule="evenodd"
-								d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-								clip-rule="evenodd"
-							/></svg
-						>
-						<span class="inline-block">View Incoming Packages</span>
+						<ViewPkgIcon />
+						<span class="inline-block w-48 text-center">View Incoming Packages</span>
 					</a>
 				{/if}
 			</div>
 		</div>
 		{#if content == 'current'}
-			<div class="max-w-8xl mx-auto px-2 py-1">
+			<div class="max-w-8xl mx-auto mt-4">
 				<!-- Stacked list -->
 				<ul
 					role="list"
@@ -279,7 +271,7 @@
 				</nav>
 			</div>
 		{:else}
-			<h2>Hello World</h2>
+			<NewInvoice />
 		{/if}
 	</div>
 </div>

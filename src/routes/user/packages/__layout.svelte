@@ -1,5 +1,6 @@
 <script>
 	import NavPackages from '$lib/user/NavPackages.svelte';
+	import Footer from '$lib/user/Footer.svelte';
 </script>
 
 <NavPackages />
@@ -10,4 +11,5 @@
 		<slot />
 	</div>
 </div>
-<!-- END Page Section -->
+
+<Footer />

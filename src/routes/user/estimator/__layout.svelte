@@ -1,5 +1,6 @@
 <script>
 	import NavEstimator from '$lib/user/NavEstimator.svelte';
+	import Footer from '$lib/user/Footer.svelte';
 </script>
 
 <NavEstimator />
@@ -11,3 +12,4 @@
 	</div>
 </div>
 <!-- END Page Section -->
+<Footer />

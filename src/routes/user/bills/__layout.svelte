@@ -1,5 +1,6 @@
 <script>
 	import NavBills from '$lib/user/NavBills.svelte';
+	import Footer from '$lib/user/Footer.svelte';
 </script>
 
 <NavBills />
@@ -11,3 +12,4 @@
 	</div>
 </div>
 <!-- END Page Section -->
+<Footer />

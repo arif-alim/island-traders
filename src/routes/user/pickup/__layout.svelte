@@ -1,5 +1,6 @@
 <script>
 	import NavPickup from '$lib/user/NavPickup.svelte';
+	import Footer from '$lib/user/Footer.svelte';
 </script>
 
 <NavPickup />
@@ -11,3 +12,4 @@
 	</div>
 </div>
 <!-- END Page Section -->
+<Footer />
