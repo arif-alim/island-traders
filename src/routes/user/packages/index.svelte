@@ -9,9 +9,9 @@
 	// New Invoice
 	import NewInvoice from '../../../components/user/NewInvoice.svelte';
 	import ViewPkgIcon from '../../../components/icons/ViewPkgIcon.svelte';
-	const activeList = '';
+	$: activeContent = 'current';
 	function handleClick(item) {
-		activeList = item.ref;
+		activeContent = item.ref;
 	}
 	$: content = 'current';
 	function handleContent(page) {

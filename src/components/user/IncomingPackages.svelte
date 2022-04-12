@@ -5,7 +5,7 @@
 	import StatusPending from './StatusPending.svelte';
 	import StatusReady from './StatusReady.svelte';
 	import StatusShipped from './StatusShipped.svelte';
-	const activeList = '';
+	$: activeList = 'list1';
 	function handleClick(item) {
 		activeList = item.ref;
 	}
