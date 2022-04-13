@@ -3,12 +3,19 @@
 	let trackingNum = '24131ZD1241';
 	let itemDescription = 'Testing item descript <b>new</b> item is now on sale! <br> Test it out!';
 	let packageNotes = 'Testing notes';
+	let dateUploaded = '22/12/20222';
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white overflow-hidden">
 	<div class="border-t border-gray-200 mt-4">
 		<dl>
+			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
+					Date Uploaded:
+				</dt>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{dateUploaded}</dd>
+			</div>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Supplier Name:
@@ -24,6 +31,12 @@
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Item Description
+				</dt>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{itemDescription}</dd>
+			</div>
+			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
+					Invoice Preview
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{itemDescription}</dd>
 			</div>

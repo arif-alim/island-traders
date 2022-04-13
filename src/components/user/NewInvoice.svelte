@@ -57,7 +57,7 @@
 		</p> -->
 		<!-- <form onsubmit="return false;" class="space-y-6 md:w-3/4"> -->
 		{#each Array(totalInvoice) as _, i}
-			<div class="p-4 lg:p-6 rounded-lg bg-gray-50 my-4 lg:my-6">
+			<div class="p-0 lg:p-6 rounded-lg sm:bg-gray-50 my-4 lg:my-6">
 				<form onsubmit="return false;" class="space-y-6 justify-center">
 					{#if totalInvoice >= 2}
 						<div class="md:flex-none pt-6">
@@ -172,7 +172,7 @@
 					<div class="space-y-1">
 						<div class=" bg-gray-50 sm:rounded-lg">
 							{#each Array(trackingNum) as _, i}
-								<div class="grid grid-cols-6 px-4 sm:pt-4 gap-x-4">
+								<div class="grid grid-cols-1 sm:grid-cols-6 px-4 sm:pt-4 gap-x-4">
 									<div class="col-span-3">
 										<h3 class="text-sl leading-6 font-semibold text-gray-900">Carrier</h3>
 										<label for="email" class="block text-sl font-medium text-gray-700">

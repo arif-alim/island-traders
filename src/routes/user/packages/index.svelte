@@ -14,6 +14,13 @@
 	import ListItem8 from '../../../components/user/listItem8.svelte';
 	import ListItem9 from '../../../components/user/listItem9.svelte';
 
+	const images = [
+		'/images/user/packages/inc-pkg-0.jpg',
+		'/images/user/packages/inc-pkg-1.jpg',
+		'/images/user/packages/inc-pkg-2.jpg',
+		'/images/user/packages/inc-pkg-3.jpg'
+	];
+
 	export let invoiceNumber;
 
 	$: content = 'current';
@@ -110,7 +117,7 @@
 						<li>
 							<a
 								href={item.href}
-								class="group block hover:bg-slate-50 p-4"
+								class="group block hover:bg-slate-50 p-4 lg:p-5"
 								on:click={() => handleClick(item.ref, item.invoice)}
 							>
 								<div class="flex items-center">
@@ -208,22 +215,22 @@
 												<div class="flex -space-x-2 relative z-0 overflow-hidden">
 													<img
 														class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+														src={images[0]}
 														alt=""
 													/>
 													<img
 														class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+														src={images[1]}
 														alt=""
 													/>
 													<img
 														class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+														src={images[2]}
 														alt=""
 													/>
 													<img
 														class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+														src={images[3]}
 														alt=""
 													/>
 												</div>
