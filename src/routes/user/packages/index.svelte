@@ -1,18 +1,17 @@
 <script>
 	// import IncomingPackages from '../../../components/user/IncomingPackages.svelte';
 	import { Packages } from '../../../components/user/incoming-data.js';
-	// New Invoice
-	import NewInvoice from '../../../components/user/NewInvoice.svelte';
 	import ViewPkgIcon from '../../../components/icons/ViewPkgIcon.svelte';
-	import ListItem1 from '../../../components/user/listItem1.svelte';
-	import ListItem2 from '../../../components/user/listItem2.svelte';
-	import ListItem3 from '../../../components/user/listItem3.svelte';
-	import ListItem4 from '../../../components/user/listItem4.svelte';
-	import ListItem5 from '../../../components/user/listItem5.svelte';
-	import ListItem6 from '../../../components/user/listItem6.svelte';
-	import ListItem7 from '../../../components/user/listItem7.svelte';
-	import ListItem8 from '../../../components/user/listItem8.svelte';
-	import ListItem9 from '../../../components/user/listItem9.svelte';
+	// New Invoice
+	import IncomingItem1 from '../../../components/user/IncomingItem1.svelte';
+	import IncomingItem2 from '../../../components/user/IncomingItem2.svelte';
+	import IncomingItem3 from '../../../components/user/IncomingItem3.svelte';
+	import IncomingItem4 from '../../../components/user/IncomingItem4.svelte';
+	import IncomingItem5 from '../../../components/user/IncomingItem5.svelte';
+	import IncomingItem6 from '../../../components/user/IncomingItem6.svelte';
+	import IncomingItem7 from '../../../components/user/IncomingItem7.svelte';
+	import IncomingItem8 from '../../../components/user/IncomingItem8.svelte';
+	import IncomingItem9 from '../../../components/user/IncomingItem9.svelte';
 
 	const images = [
 		'/images/user/packages/inc-pkg-0.jpg',
@@ -38,26 +37,26 @@
 				<div class="heading py-2 md:py-0">
 					<p class="text-md font-bold text-gray-900 sm:text-xl">
 						{#if content == 'current'}
-							View your incoming packages
+							Orders in route to my U.S.A. unit
 						{:else if content == 'invoice'}
 							Create New Invoice
-						{:else if content == 'listItem1'}
+						{:else if content == 'inc1'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem2'}
+						{:else if content == 'inc2'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem3'}
+						{:else if content == 'inc3'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem4'}
+						{:else if content == 'inc4'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem5'}
+						{:else if content == 'inc5'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem6'}
+						{:else if content == 'inc6'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem7'}
+						{:else if content == 'inc7'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem8'}
+						{:else if content == 'inc8'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'listItem9'}
+						{:else if content == 'inc9'}
 							Invoice # {invoiceNumber}
 						{/if}
 					</p>
@@ -65,11 +64,11 @@
 				<div class="max-w-lg">
 					{#if content == 'current'}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							See below a list of your packages that have arrived in our warehouse
 						</p>
 					{:else}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							Please fill in the form below
+							View package details
 						</p>
 					{/if}
 				</div>
@@ -376,26 +375,24 @@
 					</div>
 				</nav>
 			</div>
-		{:else if content == 'invoice'}
-			<NewInvoice />
-		{:else if content == 'listItem1'}
-			<ListItem1 />
-		{:else if content == 'listItem2'}
-			<ListItem2 />
-		{:else if content == 'listItem3'}
-			<ListItem3 />
-		{:else if content == 'listItem4'}
-			<ListItem4 />
-		{:else if content == 'listItem5'}
-			<ListItem5 />
-		{:else if content == 'listItem6'}
-			<ListItem6 />
-		{:else if content == 'listItem7'}
-			<ListItem7 />
-		{:else if content == 'listItem8'}
-			<ListItem8 />
-		{:else if content == 'listItem9'}
-			<ListItem9 />
+		{:else if content == 'inc1'}
+			<IncomingItem1 />
+		{:else if content == 'inc2'}
+			<IncomingItem2 />
+		{:else if content == 'inc3'}
+			<IncomingItem3 />
+		{:else if content == 'inc4'}
+			<IncomingItem4 />
+		{:else if content == 'inc5'}
+			<IncomingItem5 />
+		{:else if content == 'inc6'}
+			<IncomingItem6 />
+		{:else if content == 'inc7'}
+			<IncomingItem7 />
+		{:else if content == 'inc8'}
+			<IncomingItem8 />
+		{:else if content == 'inc9'}
+			<IncomingItem9 />
 		{/if}
 	</div>
 </div>
