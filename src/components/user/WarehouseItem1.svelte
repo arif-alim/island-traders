@@ -4,6 +4,8 @@
 	let itemDescription = 'Testing item descript <b>new</b> item is now on sale! <br> Test it out!';
 	let packageNotes = 'Testing notes';
 	let dateUploaded = '22/12/20222';
+
+	import { Warehouse as wh } from '../../components/user/warehouse-data';
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -12,39 +14,39 @@
 		<dl>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Date Uploaded:
+					Date Arrived:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{dateUploaded}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].arrived}</dd>
 			</div>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Supplier Name:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{supplierName}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].supplier}</dd>
 			</div>
 			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Tracking Number
+					Tracking Number:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{trackingNum}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].tracking}</dd>
 			</div>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Item Description
+					Item Description:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{itemDescription}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].description}</dd>
 			</div>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Invoice Preview
+					Chargeable Weight:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{itemDescription}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{@html wh[0].chargeWeight}</dd>
 			</div>
 			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Package Notes
+					Dimensions:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{packageNotes}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].dimensions}</dd>
 			</div>
 			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">About</dt>

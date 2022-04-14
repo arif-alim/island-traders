@@ -7,6 +7,12 @@
 	import WarehouseItem2 from '../../../components/user/WarehouseItem2.svelte';
 	import WarehouseItem3 from '../../../components/user/WarehouseItem3.svelte';
 
+	// Status
+	import StatusOnRoute from '../../../components/user/StatusOnRoute.svelte';
+	import StatusPending from '../../../components/user/StatusPending.svelte';
+	import StatusArrived from '../../../components/user/StatusArrived.svelte';
+	import StatusShipped from '../../../components/user/StatusShipped.svelte';
+
 	const images = [
 		'/images/user/packages/inc-pkg-0.jpg',
 		'/images/user/packages/inc-pkg-1.jpg',
@@ -41,7 +47,7 @@
 						{/if}
 					</p>
 				</div>
-				<div class="max-w-lg">
+				<div class="line-clamp-1">
 					{#if content == 'current'}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
 							See below a list of your packages that are currently on the way to our warehouse
@@ -87,28 +93,29 @@
 								<div class="flex items-center">
 									<div class="min-w-0 flex-1 flex">
 										<div
-											class="min-w-0 flex-1 md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 grid-cols-3 break-all gap-4 sm:gap-6 lg:gap-10 justify-between "
+											class="min-w-0 grid grid-flow-col auto-cols-max break-all gap-4 sm:gap-6 lg:gap-12 "
 										>
 											<div class="hidden md:block">
 												<div>
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Invoice Number:
+														Date Arrived:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.invoice}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.arrived}
 													</p>
 												</div>
 											</div>
+
 											<div class="hidden md:block">
-												<div>
+												<div class="shrink">
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Supplier Name:
+														Supplier:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
 														{item.supplier}
 													</p>
 												</div>
@@ -120,8 +127,21 @@
 													>
 														Tracking Number:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.tracking}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.description}
+													</p>
+												</div>
+											</div>
+
+											<div class="hidden md:block">
+												<div class="flex-auto">
+													<p
+														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
+													>
+														Item Description:
+													</p>
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.description}
 													</p>
 												</div>
 											</div>
@@ -130,76 +150,27 @@
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Item Description:
+														Chargeable Weight:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.description}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{@html item.chargeWeight}
 													</p>
 												</div>
 											</div>
-											<div class="block sm:hidden">
-												<div class="flex gap-4">
-													<div>
-														<p
-															class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-														>
-															Tracking Number:
-														</p>
-														<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-															{item.tracking}
-														</p>
-													</div>
-
-													<div>
-														<p
-															class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-														>
-															Item Description:
-														</p>
-														<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-															{item.description}
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="hidden lg:block">
+											<div class="hidden md:block">
 												<div>
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Package Notes:
+														Dimensions:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.notes}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{@html item.dimensions}
 													</p>
 												</div>
 											</div>
-											<div class="hidden lg:block">
-												<div />
-												<div class="flex -space-x-2 relative z-0 overflow-hidden">
-													<img
-														class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src={images[0]}
-														alt=""
-													/>
-													<img
-														class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src={images[1]}
-														alt=""
-													/>
-													<img
-														class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src={images[2]}
-														alt=""
-													/>
-													<img
-														class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white"
-														src={images[3]}
-														alt=""
-													/>
-												</div>
-											</div>
-											<!-- <div class="hidden sm:block">
+
+											<div class="hidden sm:block">
 												<div>
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
@@ -207,22 +178,16 @@
 														Status:
 													</p>
 													<div class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{#if item.ref == 'list1'}
+														{#if item.ref == 'wh1'}
 															<StatusOnRoute />
-														{:else if item.ref == 'list2'}
+														{:else if item.ref == 'wh2'}
 															<StatusPending />
-														{:else if item.ref == 'list3'}
+														{:else if item.ref == 'wh3'}
 															<StatusArrived />
-														{:else if item.ref == 'list4'}
-															<StatusShipped />
-														{:else if item.ref == 'list5'}
-															<StatusReady />
-														{:else}
-															<StatusOnRoute />
 														{/if}
 													</div>
 												</div>
-											</div> -->
+											</div>
 										</div>
 									</div>
 									<div>
