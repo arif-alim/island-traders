@@ -10,7 +10,7 @@
 	const routes = [
 		{ name: 'Incoming packages', href: '/user/packages' },
 		{ name: 'Packages in the warehouse', href: '/user/packages/warehouse' },
-		{ name: 'Action pending', href: '/user/packages/action-pending' },
+		{ name: 'Action pending', href: '/user/packages/pending-action' },
 		{ name: 'Ready to ship', href: '/user/packages/ready-to-ship' }
 	];
 </script>

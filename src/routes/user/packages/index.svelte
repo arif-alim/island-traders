@@ -12,12 +12,13 @@
 	import IncomingItem7 from '../../../components/user/IncomingItem7.svelte';
 	import IncomingItem8 from '../../../components/user/IncomingItem8.svelte';
 	import IncomingItem9 from '../../../components/user/IncomingItem9.svelte';
+	import NewInvoice from '../../../components/user/NewInvoice.svelte';
 
 	const images = [
-		'/images/user/packages/inc-pkg-0.jpg',
-		'/images/user/packages/inc-pkg-1.jpg',
-		'/images/user/packages/inc-pkg-2.jpg',
-		'/images/user/packages/inc-pkg-3.jpg'
+		'/images/user/packages/incoming/pkg-0.jpg',
+		'/images/user/packages/incoming/pkg-1.jpg',
+		'/images/user/packages/incoming/pkg-2.jpg',
+		'/images/user/packages/incoming/pkg-3.jpg'
 	];
 
 	export let invoiceNumber;
@@ -32,7 +33,7 @@
 
 <div class="min-h-full">
 	<div class="max-w-8xl mx-auto px-2">
-		<div class="block md:flex md:justify-between items-center space-y-4 md:space-y-0">
+		<div class="block md:flex md:justify-between space-y-4 md:space-y-0">
 			<div class="mt-0 sm:text-left">
 				<div class="heading py-2 md:py-0">
 					<p class="text-md font-bold text-gray-900 sm:text-xl">
@@ -40,28 +41,28 @@
 							Orders in route to my U.S.A. unit
 						{:else if content == 'invoice'}
 							Create New Invoice
-						{:else if content == 'inc1'}
+						{:else if content == 'item1'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc2'}
+						{:else if content == 'item2'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc3'}
+						{:else if content == 'item3'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc4'}
+						{:else if content == 'item4'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc5'}
+						{:else if content == 'item5'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc6'}
+						{:else if content == 'item6'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc7'}
+						{:else if content == 'item7'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc8'}
+						{:else if content == 'item8'}
 							Invoice # {invoiceNumber}
-						{:else if content == 'inc9'}
+						{:else if content == 'item9'}
 							Invoice # {invoiceNumber}
 						{/if}
 					</p>
 				</div>
-				<div class="max-w-lg">
+				<!-- <div class="max-w-lg">
 					{#if content == 'current'}
 						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
 							See below a list of your packages that have arrived in our warehouse
@@ -71,9 +72,9 @@
 							View package details
 						</p>
 					{/if}
-				</div>
+				</div> -->
 			</div>
-			<div class="flex items-center border-gray-700 sm:justify-end ">
+			<div class="flex items-center border-gray-700 sm:justify-end">
 				{#if content == 'current'}
 					<a
 						href="javascript:void(0)"
@@ -105,6 +106,21 @@
 				{/if}
 			</div>
 		</div>
+		<div class=" bg-slate-100 px-4 py-2 rounded mt-4 flex items-center">
+			{#if content == 'current'}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					See below a list of your packages that have arrived in our warehouse
+				</p>
+			{:else if content == 'invoice'}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					Please fill the form below
+				</p>
+			{:else}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					Individual package details
+				</p>
+			{/if}
+		</div>
 		{#if content == 'current'}
 			<div class="max-w-8xl mx-auto mt-4">
 				<!-- Stacked list -->
@@ -122,7 +138,7 @@
 								<div class="flex items-center">
 									<div class="min-w-0 flex-1 flex">
 										<div
-											class="min-w-0 flex-1 md:grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 grid-cols-3 break-all gap-4 sm:gap-6 lg:gap-10 justify-between "
+											class="min-w-0 grid grid-flow-col auto-cols-auto gap-4 sm:gap-8 lg:gap-20 justify-between "
 										>
 											<div class="hidden md:block">
 												<div>
@@ -156,7 +172,7 @@
 														Tracking Number:
 													</p>
 													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.tracking}
+														{item.trackingNumber}
 													</p>
 												</div>
 											</div>
@@ -168,35 +184,11 @@
 														Item Description:
 													</p>
 													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.description}
+														{item.itemDescription}
 													</p>
 												</div>
 											</div>
-											<div class="block sm:hidden">
-												<div class="flex gap-4">
-													<div>
-														<p
-															class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-														>
-															Tracking Number:
-														</p>
-														<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-															{item.tracking}
-														</p>
-													</div>
 
-													<div>
-														<p
-															class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-														>
-															Item Description:
-														</p>
-														<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-															{item.description}
-														</p>
-													</div>
-												</div>
-											</div>
 											<div class="hidden lg:block">
 												<div>
 													<p
@@ -204,8 +196,10 @@
 													>
 														Package Notes:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.notes}
+													<p
+														class="mt-1 flex items-center font-medium text-sm text-slate-900 line-clamp-1"
+													>
+														{item.packageNotes}
 													</p>
 												</div>
 											</div>
@@ -213,51 +207,27 @@
 												<div />
 												<div class="flex -space-x-2 relative z-0 overflow-hidden">
 													<img
-														class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+														class="relative z-30 inline-block h-10 w-10 rounded ring-2 ring-white"
 														src={images[0]}
 														alt=""
 													/>
 													<img
-														class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+														class="relative z-20 inline-block h-10 w-10 rounded ring-2 ring-white"
 														src={images[1]}
 														alt=""
 													/>
 													<img
-														class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+														class="relative z-10 inline-block h-10 w-10 rounded ring-2 ring-white"
 														src={images[2]}
 														alt=""
 													/>
 													<img
-														class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+														class="relative z-0 inline-block h-10 w-10 rounded ring-2 ring-white"
 														src={images[3]}
 														alt=""
 													/>
 												</div>
 											</div>
-											<!-- <div class="hidden sm:block">
-												<div>
-													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-													>
-														Status:
-													</p>
-													<div class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{#if item.ref == 'list1'}
-															<StatusOnRoute />
-														{:else if item.ref == 'list2'}
-															<StatusPending />
-														{:else if item.ref == 'list3'}
-															<StatusArrived />
-														{:else if item.ref == 'list4'}
-															<StatusShipped />
-														{:else if item.ref == 'list5'}
-															<StatusReady />
-														{:else}
-															<StatusOnRoute />
-														{/if}
-													</div>
-												</div>
-											</div> -->
 										</div>
 									</div>
 									<div>
@@ -338,18 +308,6 @@
 						>
 							4
 						</a>
-						<a
-							href="#"
-							class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
-						>
-							5
-						</a>
-						<a
-							href="#"
-							class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
-						>
-							6
-						</a>
 					</div>
 					<div class="-mt-px w-0 flex-1 flex justify-end">
 						<a
@@ -375,23 +333,25 @@
 					</div>
 				</nav>
 			</div>
-		{:else if content == 'inc1'}
+		{:else if content == 'invoice'}
+			<NewInvoice />
+		{:else if content == 'item1'}
 			<IncomingItem1 />
-		{:else if content == 'inc2'}
+		{:else if content == 'item2'}
 			<IncomingItem2 />
-		{:else if content == 'inc3'}
+		{:else if content == 'item3'}
 			<IncomingItem3 />
-		{:else if content == 'inc4'}
+		{:else if content == 'item4'}
 			<IncomingItem4 />
-		{:else if content == 'inc5'}
+		{:else if content == 'item5'}
 			<IncomingItem5 />
-		{:else if content == 'inc6'}
+		{:else if content == 'item6'}
 			<IncomingItem6 />
-		{:else if content == 'inc7'}
+		{:else if content == 'item7'}
 			<IncomingItem7 />
-		{:else if content == 'inc8'}
+		{:else if content == 'item8'}
 			<IncomingItem8 />
-		{:else if content == 'inc9'}
+		{:else if content == 'item9'}
 			<IncomingItem9 />
 		{/if}
 	</div>

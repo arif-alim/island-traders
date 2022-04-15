@@ -1,54 +1,48 @@
 <script>
-	let supplierName = 'Walmart';
-	let trackingNum = '24131ZD1241';
-	let itemDescription = 'Testing item descript <b>new</b> item is now on sale! <br> Test it out!';
-	let packageNotes = 'Testing notes';
-	let dateUploaded = '22/12/20222';
-
 	import { Warehouse as wh } from '../../components/user/warehouse-data';
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-white overflow-hidden">
-	<div class="border-t border-gray-200 mt-4">
+	<div class="mt-4">
 		<dl>
-			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Date Arrived:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].arrived}</dd>
 			</div>
-			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Supplier Name:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].supplier}</dd>
 			</div>
-			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Tracking Number:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].tracking}</dd>
 			</div>
-			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Item Description:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].description}</dd>
 			</div>
-			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Chargeable Weight:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{@html wh[0].chargeWeight}</dd>
 			</div>
-			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Dimensions:
 				</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{wh[0].dimensions}</dd>
 			</div>
-			<div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">About</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 					Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa
@@ -57,14 +51,14 @@
 					deserunt qui eu.
 				</dd>
 			</div>
-			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">Images</dt>
 				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center">
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="/images/user/packages/inc-pkg-0.jpg"
+								src="/images/user/packages/incoming/pkg-0.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -72,7 +66,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="/images/user/packages/inc-pkg-1.jpg"
+								src="/images/user/packages/incoming/pkg-1.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -80,7 +74,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="/images/user/packages/inc-pkg-2.jpg"
+								src="/images/user/packages/incoming/pkg-2.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -88,7 +82,7 @@
 						<div>
 							<!-- Rounded Avatar (extra large) -->
 							<img
-								src="/images/user/packages/inc-pkg-3.jpg"
+								src="/images/user/packages/incoming/pkg-3.jpg"
 								alt="User Avatar"
 								class="inline-block w-full h-auto rounded-lg"
 							/>
@@ -96,7 +90,7 @@
 					</div>
 				</dd>
 			</div>
-			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Attached Invoices:
 				</dt>

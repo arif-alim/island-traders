@@ -1,81 +1,59 @@
 <script>
-	import { Packages as pkg } from '../../components/user/incoming-data.js';
+	import { Ship as pkg } from '../../components/user/ship-data.js';
 
 	const Images = [
-		{ src: '/images/user/packages/incoming/pkg-0.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-1.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-2.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-3.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-4.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-0.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-5.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-6.jpg', alt: 'Package in the warehouse' }
+		{ src: '/images/user/packages/incoming/pkg-2.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-1.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-6.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-3.jpg', alt: 'Package in the warehouse' }
 	];
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
+
 <div class="bg-white overflow-hidden">
 	<div class="mt-4">
 		<dl>
 			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Date Uploaded:
+					Date Arrived:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].dateUploaded}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].dateArrived}</dd>
 			</div>
 			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Invoice #:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].invoice}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].invoiceNumber}</dd>
 			</div>
 			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Supplier:
+					Warehouse (WR) #:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].supplier}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].wrNumber}</dd>
 			</div>
 			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Tracking Number:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].trackingNumber}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].trackingNumber}</dd>
 			</div>
 			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Item Description:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].itemDescription}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].itemDescription}</dd>
 			</div>
 			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Invoice Preview:
+					Shipping Address:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].invoicePreview}</dd>
+				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[2].address}</dd>
 			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Package Notes:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].packageNotes}</dd>
-			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Status:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].status}</dd>
-			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Arrival Date:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].arrivalDate}</dd>
-			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Arrival Time:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].arrivalTime}</dd>
-			</div>
+
 			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Images:

@@ -1,19 +1,10 @@
 <script>
 	// import IncomingPackages from '../../../components/user/IncomingPackages.svelte';
-	import { Warehouse } from '../../../components/user/warehouse-data.js';
+	import { Pending } from '../../../components/user/pending-data.js';
 
 	import ViewPkgIcon from '../../../components/icons/ViewPkgIcon.svelte';
-	import WarehouseItem1 from '../../../components/user/WarehouseItem1.svelte';
-	import WarehouseItem2 from '../../../components/user/WarehouseItem2.svelte';
-	import WarehouseItem3 from '../../../components/user/WarehouseItem3.svelte';
-	import WarehouseItem4 from '../../../components/user/WarehouseItem4.svelte';
-	import WarehouseItem5 from '../../../components/user/WarehouseItem5.svelte';
-
-	// Status
-	import StatusOnRoute from '../../../components/user/StatusOnRoute.svelte';
-	import StatusPending from '../../../components/user/StatusPending.svelte';
-	import StatusArrived from '../../../components/user/StatusArrived.svelte';
-	import StatusShipped from '../../../components/user/StatusShipped.svelte';
+	import PendingItem1 from '../../../components/user/PendingItem1.svelte';
+	import PendingItem2 from '../../../components/user/PendingItem2.svelte';
 
 	const images = [
 		'/images/user/packages/incoming/pkg-0.jpg',
@@ -39,9 +30,9 @@
 				<div class="heading py-2 md:py-0">
 					<p class="text-md font-bold text-gray-900 sm:text-xl">
 						{#if content == 'current'}
-							Packages in the U.S. Warehouse
+							Pending Action
 						{:else}
-							Package Warehouse #: {wrNum}
+							Pending action for package with tracking #: {wrNum}
 						{/if}
 					</p>
 				</div>
@@ -59,18 +50,14 @@
 				{/if}
 			</div>
 		</div>
-		<div class=" bg-slate-100 px-4 py-2 rounded mt-4 flex items-center">
+		<div class=" bg-pink-100 px-4 py-2 rounded mt-4 flex items-center">
 			{#if content == 'current'}
 				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					See below a list of your packages that have arrived in our warehouse
-				</p>
-			{:else if content == 'invoice'}
-				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					Please fill the form below
+					See below a list of your packages that requires your attention!
 				</p>
 			{:else}
 				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					Individual package details
+					The form below is editable by click on the fields
 				</p>
 			{/if}
 		</div>
@@ -81,7 +68,7 @@
 					role="list"
 					class="mt-5 border-t border-gray-200 divide-y divide-gray-200 sm:mt-0 sm:border-t-0"
 				>
-					{#each Warehouse as item}
+					{#each Pending as item}
 						<li>
 							<a
 								href={item.href}
@@ -91,7 +78,7 @@
 								<div class="flex items-center">
 									<div class="min-w-0 flex-1 flex">
 										<div
-											class="min-w-0 grid grid-flow-col auto-cols-max break-all gap-4 sm:gap-6 lg:gap-12 "
+											class="min-w-0 grid grid-flow-col auto-cols-auto gap-4 sm:gap-8 lg:gap-12 justify-between "
 										>
 											<div class="hidden md:block">
 												<div>
@@ -101,13 +88,38 @@
 														Date Arrived:
 													</p>
 													<p class="mt-1 items-center font-medium text-sm text-slate-900">
-														{item.arrived}
+														{item.dateArrived}
 													</p>
 												</div>
 											</div>
 
 											<div class="hidden md:block">
 												<div class="shrink">
+													<p
+														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
+													>
+														Warehouse (WR) #:
+													</p>
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.wrNumber}
+													</p>
+												</div>
+											</div>
+											<div class="hidden md:block">
+												<div>
+													<p
+														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
+													>
+														Invoice:
+													</p>
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.invoiceNumber}
+													</p>
+												</div>
+											</div>
+
+											<div class="hidden md:block">
+												<div class="flex-auto">
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
@@ -118,76 +130,39 @@
 													</p>
 												</div>
 											</div>
-											<div class="hidden md:block">
-												<div>
-													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-													>
-														Tracking Number:
-													</p>
-													<p class="mt-1 items-center font-medium text-sm text-slate-900">
-														{item.description}
-													</p>
-												</div>
-											</div>
 
 											<div class="hidden md:block">
-												<div class="flex-auto">
+												<div>
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
 														Item Description:
 													</p>
 													<p class="mt-1 items-center font-medium text-sm text-slate-900">
-														{item.description}
+														{@html item.itemDescription}
 													</p>
 												</div>
 											</div>
 											<div class="hidden md:block">
 												<div>
 													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
+														class="text-xs tracking-tight uppercase font-bold text-rose-600 truncate"
 													>
-														Chargeable Weight:
+														Action Required:
 													</p>
 													<p class="mt-1 items-center font-medium text-sm text-slate-900">
-														{@html item.chargeWeight}
+														{@html item.actionRequired}
 													</p>
 												</div>
 											</div>
 											<div class="hidden md:block">
 												<div>
-													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-													>
-														Dimensions:
+													<p class="text-xs tracking-tight uppercase font-medium text-blue-800">
+														Reason/Notes:
 													</p>
 													<p class="mt-1 items-center font-medium text-sm text-slate-900">
-														{@html item.dimensions}
+														{@html item.reasonNotes}
 													</p>
-												</div>
-											</div>
-
-											<div class="hidden sm:block">
-												<div>
-													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
-													>
-														Status:
-													</p>
-													<div class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{#if item.ref == 'wh1'}
-															<StatusOnRoute />
-														{:else if item.ref == 'wh2'}
-															<StatusPending />
-														{:else if item.ref == 'wh3'}
-															<StatusArrived />
-														{:else if item.ref == 'wh4'}
-															<StatusPending />
-														{:else if item.ref == 'wh5'}
-															<StatusShipped />
-														{/if}
-													</div>
 												</div>
 											</div>
 										</div>
@@ -307,16 +282,10 @@
 					</div>
 				</nav>
 			</div>
-		{:else if content == 'wh1'}
-			<WarehouseItem1 />
-		{:else if content == 'wh2'}
-			<WarehouseItem2 />
-		{:else if content == 'wh3'}
-			<WarehouseItem3 />
-		{:else if content == 'wh4'}
-			<WarehouseItem3 />
-		{:else if content == 'wh5'}
-			<WarehouseItem3 />
+		{:else if content == 'ap1'}
+			<PendingItem1 />
+		{:else if content == 'ap2'}
+			<PendingItem2 />
 		{/if}
 	</div>
 </div>
