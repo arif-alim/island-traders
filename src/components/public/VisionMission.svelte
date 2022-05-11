@@ -1,5 +1,5 @@
 <section
-	class="-mt-32 max-w-8xl mx-auto relative z-10 pb-12 sm:pb-12 px-4 lg:px-8"
+	class="-mt-32 max-w-7xl mx-auto relative z-10 pb-12 sm:pb-12 px-4"
 	aria-labelledby="contact-heading"
 >
 	<h2 class="sr-only" id="contact-heading">Vision</h2>

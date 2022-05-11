@@ -39,7 +39,7 @@
 
 <div class="bg-white">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
-	<div class="max-w-8xl mx-auto px-4">
+	<div class="max-w-7xl mx-auto px-4">
 		<!-- ====== Footer Section Start -->
 		<footer class="bg-white pt-12 mt-6 pb-4 relative z-10  ">
 			<div class="container">
@@ -79,7 +79,7 @@
 						</div>
 					</div>
 
-					<div class="md:w-full lg:w-2/12 px-4">
+					<div class="md:w-2/12 w-1/2 px-4">
 						<div class="w-full mb-4">
 							<h4 class="text-dark text-base font-semibold mb-3">Services</h4>
 							<ul>
@@ -102,7 +102,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="w-1/2 lg:w-2/12 px-4">
+					<div class="md:w-2/12 w-1/2 px-4">
 						<div class="w-full mb-4">
 							<h4 class="text-dark text-base font-semibold mb-3">Shipping</h4>
 							<ul>
@@ -125,7 +125,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="w-1/2 lg:w-2/12 px-4">
+					<div class="md:w-2/12 w-1/2 px-4">
 						<div class="w-full mb-4">
 							<h4 class="text-dark text-base font-semibold mb-3">Quick Links</h4>
 							<ul>
@@ -148,7 +148,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="w-full sm:w-1/2 lg:w-2/12 px-4">
+					<div class="md:w-2/12 w-1/2 px-4">
 						<div class="w-full mb-4">
 							<h4 class="text-dark text-base font-semibold mb-3">Social links</h4>
 							<ul role={'list'} class="mt-2 space-y-2">

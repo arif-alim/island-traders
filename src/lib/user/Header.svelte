@@ -16,7 +16,7 @@
 </script>
 
 <header class="bg-white shadow">
-	<div class="max-w-8xl mx-auto px-4 lg:px-8">
+	<div class="max-w-7xl mx-auto px-4">
 		<div class="relative flex justify-between h-16 ">
 			<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
 				<div class="flex-shrink-0 flex items-center">

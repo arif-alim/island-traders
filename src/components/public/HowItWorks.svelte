@@ -8,7 +8,7 @@
 	let activeTab = 'test';
 </script>
 
-<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20 lg:space-y-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-20 lg:space-y-12">
 	<!-- Heading -->
 	<div class="max-w-4xl">
 		<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -39,7 +39,7 @@
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
-					<h3 class="text-md font-semibold text-gray-900 dark:text-white">
+					<h3 class="font-semibold text-gray-900 dark:text-white">
 						Shop online and ship it to our U.S warehouse
 					</h3>
 				</div>
@@ -62,7 +62,7 @@
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
-					<h3 class="text-md font-semibold text-gray-900 dark:text-white">
+					<h3 class="font-semibold text-gray-900 dark:text-white">
 						Packages are shipped from U.S to Nassau warehouse
 					</h3>
 				</div>
@@ -85,7 +85,7 @@
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
-					<h3 class="text-md font-semibold text-gray-900 dark:text-white">
+					<h3 class="font-semibold text-gray-900 dark:text-white">
 						Packages arrive to our Nassau warehouse
 					</h3>
 				</div>
@@ -108,7 +108,7 @@
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
-					<h3 class="text-md font-semibold text-gray-900 dark:text-white">
+					<h3 class="font-semibold text-gray-900 dark:text-white">
 						Packages are inspected, and consolidated
 					</h3>
 				</div>
@@ -132,7 +132,7 @@
 			</div>
 			<div class="flex items-center">
 				<div class="mt-3 sm:pr-8 text-center">
-					<h3 class="text-md font-semibold text-gray-900 dark:text-white">
+					<h3 class="font-semibold text-gray-900 dark:text-white">
 						Finally, packages are shipped to our customers
 					</h3>
 				</div>

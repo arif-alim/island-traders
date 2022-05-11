@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-white">
-	<div class="max-w-8xl mx-auto py-4 sm:px-2 sm:py-12 lg:px-4">
+	<div class="max-w-7xl mx-auto py-4 sm:px-2 sm:py-12 lg:px-4">
 		<div class="max-w-2xl mx-auto lg:max-w-none">
 			<div class="lg:col-span-8 max-w-4xl">
 				<h2 class="text-4xl font-extrabold tracking-tight text-gray-900 leading-tight py-2">

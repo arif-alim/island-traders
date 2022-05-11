@@ -15,7 +15,7 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <footer class="bg-white border-t border-gray-200 mt-4 lg:mt-12">
-	<div class="max-w-8xl mx-auto px-4 py-4 lg:py-4 lg:px-12 justify-between flex items-center">
+	<div class="max-w-7xl mx-auto px-4 py-4 lg:py-4 lg:px-12 justify-between flex items-center">
 		<nav class="flex flex-wrap md:order-1 gap-8" aria-label="Footer">
 			{#each footerLinks as link}
 				<div>

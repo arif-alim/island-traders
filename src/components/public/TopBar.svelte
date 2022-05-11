@@ -2,7 +2,7 @@
 	let isActive = 'itss';
 </script>
 
-<div class="max-w-8xl mx-auto h-10 px-4 flex items-center justify-between">
+<div class="max-w-7xl mx-auto h-10 px-4 md:px-0 flex items-center justify-between">
 	<div class="flex items-center">
 		<div class="sm:hidden">
 			<label for="tabs" class="sr-only">Select a tab</label>

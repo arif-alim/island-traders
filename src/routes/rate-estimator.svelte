@@ -63,7 +63,7 @@
 <RateEstimatorHero />
 
 <div class="bg-white">
-	<div class="max-w-8xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+	<div class="max-w-7xl mx-auto px-4 py-12 lg:py-16">
 		<div class="inline-flex justify-between">
 			<div class="flex-col space-y-4">
 				<h1 class="font-extrabold	text-2xl sm:text-4xl text-gray-900 tracking-tight">

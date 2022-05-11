@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<div class="hidden lg:block relative lg:w-4/12 ">
-		<div class="max-w-8xl h-full">
+		<div class="max-w-7xl h-full">
 			<img
 				src="https://islandtraders.s3.ca-central-1.amazonaws.com/home/islandtraders_consolidation.jpg"
 				alt="happy island traders customer"

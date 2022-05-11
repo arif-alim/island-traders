@@ -1,5 +1,5 @@
 <div class="bg-gray-100">
-	<div class="container xl:max-w-8xl mx-auto px-4 py-16 lg:px-8 ">
+	<div class="container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 ">
 		<!-- Features -->
 		<h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">What we offer</h2>
 		<p class="mt-4 text-gray-700 max-w-4xl prose font-bold">

@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div class="max-w-8xl mx-auto px-2 py-1">
+<div class="max-w-7xl mx-auto px-2 py-1">
 	<!-- Stacked list -->
 	<ul
 		role="list"

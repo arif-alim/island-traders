@@ -6,7 +6,7 @@
 <PickupHero />
 
 <div class="bg-white">
-	<div class="container px-4 py-12 sm:py-16 mx-auto xl:max-w-8xl">
+	<div class="container px-4 py-12 sm:py-16 mx-auto xl:max-w-7xl">
 		<div class="xl:flex xl:items-center xL:-mx-4">
 			<div class="lg:w-1/2 ">
 				<div class="flex-col space-y-4">

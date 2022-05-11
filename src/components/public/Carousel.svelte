@@ -1,4 +1,4 @@
-<div class="relative bg-white overflow-hidden max-w-8xl mx-auto">
+<div class="relative bg-white overflow-hidden max-w-7xl mx-auto">
 	<div class="flex flex-wrap justify-between items-center">
 		<!-- <div class="w-full lg:w-4/12 px-4">
 				<div>Testing</div>

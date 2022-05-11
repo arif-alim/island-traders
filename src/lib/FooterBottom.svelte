@@ -1,4 +1,4 @@
-<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 	<div class="py-6 md:flex md:items-center md:justify-between border-t border-gray-100">
 		<div class="md:text-left ">
 			<p class="text-xs font-medium sm:text-xs text-gray-500">

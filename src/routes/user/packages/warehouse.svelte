@@ -31,7 +31,7 @@
 </script>
 
 <div class="min-h-full">
-	<div class="max-w-8xl mx-auto px-2">
+	<div class="max-w-7xl mx-auto px-2">
 		<div class="block md:flex md:justify-between items-center space-y-4 md:space-y-0">
 			<div class="mt-0 sm:text-left">
 				<div class="heading py-2 md:py-0">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 		{#if content == 'current'}
-			<div class="max-w-8xl mx-auto mt-4">
+			<div class="max-w-7xl mx-auto mt-4">
 				<!-- Stacked list -->
 				<ul
 					role="list"

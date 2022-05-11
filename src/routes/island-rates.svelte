@@ -32,7 +32,7 @@
 <IslandRatesHero />
 
 <div class="bg-white">
-	<div class="space-y-12 max-w-8xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+	<div class="space-y-12 max-w-7xl mx-auto px-4 py-12 lg:py-16">
 		<div class="inline-flex justify-between">
 			<div class="flex-col">
 				<h2 class="font-extrabold	text-2xl sm:text-4xl text-gray-900 mb-4 tracking-tight">
@@ -145,7 +145,7 @@
 <IslandRatesHero />
 
 <div class="relative py-12 px-4 lg:py-16 ">
-	<div class="relative max-w-8xl mx-auto">
+	<div class="relative max-w-7xl mx-auto">
 		{#each islands as island}
 			<div
 				class="nav nav-tabs inline-flex md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"

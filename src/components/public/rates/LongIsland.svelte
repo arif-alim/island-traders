@@ -2,7 +2,7 @@
 	import LottieRates from '../lottie/LottieRates.svelte';
 </script>
 
-<div class="mx-auto max-w-8xl bg-gray-50 px-8">
+<div class="mx-auto max-w-7xl bg-gray-50 px-8">
 	<div class="flex items-center h-48">
 		<!-- <div class="w-full lg:w-7/12 xl:w-7/12"> -->
 		<div class="w-full md:w-2/3">
