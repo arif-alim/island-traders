@@ -1,11 +1,10 @@
 <script>
 	// import IncomingPackages from '../../../components/user/IncomingPackages.svelte';
-	import { Ship as pkg } from '../../../components/user/ship-data.js';
+	import { Pending } from '../../../components/user/pending-data.js';
 
 	import ViewPkgIcon from '../../../components/icons/ViewPkgIcon.svelte';
-	import ShipItem1 from '../../../components/user/ShipItem1.svelte';
-	import ShipItem2 from '../../../components/user/ShipItem2.svelte';
-	import ShipItem3 from '../../../components/user/ShipItem3.svelte';
+	import PendingItem1 from '../../../components/user/PendingItem1.svelte';
+	import PendingItem2 from '../../../components/user/PendingItem2.svelte';
 
 	const images = [
 		'/images/user/packages/incoming/pkg-0.jpg',
@@ -31,9 +30,9 @@
 				<div class="heading py-2 md:py-0">
 					<p class="text-md font-bold text-gray-900 sm:text-xl">
 						{#if content == 'current'}
-							Ready to Ship Packages
+							Pending Action
 						{:else}
-							Please review your package details and have them shipped
+							Pending action for package with tracking #: {wrNum}
 						{/if}
 					</p>
 				</div>
@@ -42,31 +41,23 @@
 				{#if content != 'current'}
 					<a
 						href="javascript:void(0)"
-						class="flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded border-emerald-700 bg-emerald-700 text-white hover:text-white hover:bg-emerald-800 hover:border-emerald-800"
+						class="flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded border-slate-700 bg-slate-700 text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:ring focus:ring-slate-500 focus:ring-opacity-50 active:bg-slate-700 active:border-slate-700"
 						on:click={() => handleClick('current', 1)}
 					>
 						<ViewPkgIcon />
-						<span class="w-full text-center">View Packages Ready to Ship</span>
+						<span class="w-full text-center">View Packages in the Warehouse</span>
 					</a>
 				{/if}
 			</div>
 		</div>
-		<div class=" bg-emerald-100 px-4 py-2 rounded mt-4 flex items-center">
+		<div class=" bg-pink-100 px-4 py-2 rounded mt-4 flex items-center">
 			{#if content == 'current'}
 				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
 					See below a list of your packages that requires your attention!
 				</p>
-			{:else if content == 'rs1'}
+			{:else}
 				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					Your {pkg[0].itemDescription} from {pkg[0].supplierName} is ready to ship!
-				</p>
-			{:else if content == 'rs2'}
-				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					Your {pkg[1].itemDescription} from {pkg[1].supplierName} is ready to ship!
-				</p>
-			{:else if content == 'rs3'}
-				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
-					Your {pkg[1].itemDescription} from {pkg[1].supplierName} is ready to ship!
+					The form below is editable by click on the fields
 				</p>
 			{/if}
 		</div>
@@ -77,38 +68,39 @@
 					role="list"
 					class="mt-5 border-t border-gray-200 divide-y divide-gray-200 sm:mt-0 sm:border-t-0"
 				>
-					{#each pkg as item}
+					{#each Pending as item}
 						<li>
 							<a
 								href={item.href}
 								class="group block hover:bg-slate-50 p-4 lg:p-5"
-								on:click={() => handleClick(item.ref, item.invoice)}
+								on:click={() => handleClick(item.ref, item.wr)}
 							>
 								<div class="flex items-center">
 									<div class="min-w-0 flex-1 flex">
 										<div
-											class="min-w-0 grid grid-flow-col auto-cols-auto gap-4 sm:gap-8 lg:gap-20 justify-between "
+											class="min-w-0 grid grid-flow-col auto-cols-auto gap-4 sm:gap-8 lg:gap-12 justify-between "
 										>
 											<div class="hidden md:block">
 												<div>
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Invoice Number:
+														Date Arrived:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.invoiceNumber}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.dateArrived}
 													</p>
 												</div>
 											</div>
+
 											<div class="hidden md:block">
-												<div>
+												<div class="shrink">
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
 														Warehouse (WR) #:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
 														{item.wrNumber}
 													</p>
 												</div>
@@ -118,25 +110,27 @@
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Supplier Name:
+														Invoice:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.supplierName}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.invoiceNumber}
 													</p>
 												</div>
 											</div>
+
 											<div class="hidden md:block">
-												<div>
+												<div class="flex-auto">
 													<p
 														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
 													>
-														Tracking Number:
+														Supplier:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.trackingNumber}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{item.supplier}
 													</p>
 												</div>
 											</div>
+
 											<div class="hidden md:block">
 												<div>
 													<p
@@ -144,47 +138,31 @@
 													>
 														Item Description:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.itemDescription}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{@html item.itemDescription}
 													</p>
 												</div>
 											</div>
 											<div class="hidden md:block">
 												<div>
 													<p
-														class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate"
+														class="text-xs tracking-tight uppercase font-bold text-rose-600 truncate"
 													>
-														Shipping Address:
+														Action Required:
 													</p>
-													<p class="mt-1 flex items-center font-medium text-sm text-slate-900">
-														{item.address}
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{@html item.actionRequired}
 													</p>
 												</div>
 											</div>
-
-											<div class="hidden lg:block">
-												<div />
-												<div class="flex -space-x-2 relative z-0 overflow-hidden">
-													<img
-														class="relative z-30 inline-block h-10 w-10 rounded ring-2 ring-white"
-														src={images[0]}
-														alt=""
-													/>
-													<img
-														class="relative z-20 inline-block h-10 w-10 rounded ring-2 ring-white"
-														src={images[1]}
-														alt=""
-													/>
-													<img
-														class="relative z-10 inline-block h-10 w-10 rounded ring-2 ring-white"
-														src={images[2]}
-														alt=""
-													/>
-													<img
-														class="relative z-0 inline-block h-10 w-10 rounded ring-2 ring-white"
-														src={images[3]}
-														alt=""
-													/>
+											<div class="hidden md:block">
+												<div>
+													<p class="text-xs tracking-tight uppercase font-medium text-blue-800">
+														Reason/Notes:
+													</p>
+													<p class="mt-1 items-center font-medium text-sm text-slate-900">
+														{@html item.reasonNotes}
+													</p>
 												</div>
 											</div>
 										</div>
@@ -304,12 +282,10 @@
 					</div>
 				</nav>
 			</div>
-		{:else if content == 'rs1'}
-			<ShipItem1 />
-		{:else if content == 'rs2'}
-			<ShipItem2 />
-		{:else if content == 'rs3'}
-			<ShipItem3 />
+		{:else if content == 'ap1'}
+			<PendingItem1 />
+		{:else if content == 'ap2'}
+			<PendingItem2 />
 		{/if}
 	</div>
 </div>

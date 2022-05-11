@@ -1,14 +1,14 @@
 <script>
-	import { Packages as pkg } from '../../components/user/incoming-data.js';
+	import { Pending as pkg } from '../../components/user/pending-data.js';
 
 	const Images = [
-		{ src: '/images/user/packages/incoming/pkg-0.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-1.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-2.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-6.jpg', alt: 'Package in the warehouse' },
+		{ src: '/images/user/packages/incoming/pkg-0.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-3.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-4.jpg', alt: 'Package in the warehouse' },
 		{ src: '/images/user/packages/incoming/pkg-5.jpg', alt: 'Package in the warehouse' },
-		{ src: '/images/user/packages/incoming/pkg-6.jpg', alt: 'Package in the warehouse' }
+		{ src: '/images/user/packages/incoming/pkg-4.jpg', alt: 'Package in the warehouse' }
 	];
 </script>
 
@@ -16,71 +16,67 @@
 <div class="bg-white overflow-hidden">
 	<div class="mt-4">
 		<dl>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Date Uploaded:
+			<div class="bg-white sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
+					Date Arrived:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].dateUploaded}</dd>
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].dateArrived}
+				</dd>
 			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Invoice #:
+			<div class="bg-slate-50 sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
+					Warehouse (WR) #:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].invoice}</dd>
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].wrNumber}
+				</dd>
 			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
+			<div class="bg-white sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
+					Invoice:
+				</dt>
+				<dd contenteditable="true" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].invoiceNumber}
+				</dd>
+			</div>
+			<div class="bg-slate-50 sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
 					Supplier:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].supplier}</dd>
+				<dd contenteditable="true" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].supplierName}
+				</dd>
 			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Tracking Number:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].trackingNumber}</dd>
-			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
+			<div class="bg-white sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
 					Item Description:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].itemDescription}</dd>
+				<dd contenteditable="true" class="p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].itemDescription}
+				</dd>
 			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Invoice Preview:
+			<div class="bg-slate-50 sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
+					Action Required:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].invoicePreview}</dd>
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].actionRequired}
+				</dd>
 			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Package Notes:
+			<div class="bg-white sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
+					Reason/Notes:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].packageNotes}</dd>
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+					{pkg[1].reasonNotes}
+				</dd>
 			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Status:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].status}</dd>
-			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Arrival Date:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].arrivalDate}</dd>
-			</div>
-			<div class="bg-slate-50 p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
-					Arrival Time:
-				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{pkg[5].arrivalTime}</dd>
-			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
+			<div class="bg-white sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
+				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate py-4">
 					Images:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 text-center">
 						{#each Images as img}
 							<div>
@@ -90,11 +86,11 @@
 					</div>
 				</dd>
 			</div>
-			<div class="bg-white p-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white px-1 py-2 sm:grid sm:grid-cols-3 sm:gap-4 px-4 items-center">
 				<dt class="text-xs tracking-tight uppercase font-medium text-slate-600 truncate">
 					Attached Invoices:
 				</dt>
-				<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+				<dd contenteditable="false" class=" p-2 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
 					<ul role="list" class="border border-gray-200 rounded-md divide-y divide-gray-200">
 						<li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm bg-pink-50">
 							<div class="w-0 flex-1 flex items-center">

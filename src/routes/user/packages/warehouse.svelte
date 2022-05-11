@@ -6,6 +6,8 @@
 	import WarehouseItem1 from '../../../components/user/WarehouseItem1.svelte';
 	import WarehouseItem2 from '../../../components/user/WarehouseItem2.svelte';
 	import WarehouseItem3 from '../../../components/user/WarehouseItem3.svelte';
+	import WarehouseItem4 from '../../../components/user/WarehouseItem4.svelte';
+	import WarehouseItem5 from '../../../components/user/WarehouseItem5.svelte';
 
 	// Status
 	import StatusOnRoute from '../../../components/user/StatusOnRoute.svelte';
@@ -14,18 +16,18 @@
 	import StatusShipped from '../../../components/user/StatusShipped.svelte';
 
 	const images = [
-		'/images/user/packages/inc-pkg-0.jpg',
-		'/images/user/packages/inc-pkg-1.jpg',
-		'/images/user/packages/inc-pkg-2.jpg',
-		'/images/user/packages/inc-pkg-3.jpg'
+		'/images/user/packages/incoming/pkg-0.jpg',
+		'/images/user/packages/incoming/pkg-1.jpg',
+		'/images/user/packages/incoming/pkg-2.jpg',
+		'/images/user/packages/incoming/pkg-3.jpg'
 	];
 
-	export let invoiceNumber;
+	export let wrNum = 0;
 
 	$: content = 'current';
 
 	function handleClick(page, num) {
-		invoiceNumber = num;
+		wrNum = num;
 		content = page;
 	}
 </script>
@@ -38,29 +40,10 @@
 					<p class="text-md font-bold text-gray-900 sm:text-xl">
 						{#if content == 'current'}
 							Packages in the U.S. Warehouse
-						{:else if content == 'WarehouseItem1'}
-							Invoice # {invoiceNumber}
-						{:else if content == 'WarehouseItem2'}
-							Invoice # {invoiceNumber}
-						{:else if content == 'WarehouseItem3'}
-							Invoice # {invoiceNumber}
+						{:else}
+							Package Warehouse #: {wrNum}
 						{/if}
 					</p>
-				</div>
-				<div class="line-clamp-1">
-					{#if content == 'current'}
-						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							See below a list of your packages that are currently on the way to our warehouse
-						</p>
-					{:else if content == 'invoice'}
-						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							Please fill in the form below
-						</p>
-					{:else}
-						<p class="mt-1 text-ss lg:text-tiny font-normal text-gray-600 line-clamp-2">
-							View invoice details
-						</p>
-					{/if}
 				</div>
 			</div>
 			<div class="flex items-center border-gray-700 sm:justify-end ">
@@ -68,13 +51,28 @@
 					<a
 						href="javascript:void(0)"
 						class="flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-4 py-2 leading-5 text-sm rounded border-slate-700 bg-slate-700 text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:ring focus:ring-slate-500 focus:ring-opacity-50 active:bg-slate-700 active:border-slate-700"
-						on:click={() => handleClick('current', 0)}
+						on:click={() => handleClick('current', 1)}
 					>
 						<ViewPkgIcon />
 						<span class="w-full text-center">View Packages in the Warehouse</span>
 					</a>
 				{/if}
 			</div>
+		</div>
+		<div class=" bg-slate-100 px-4 py-2 rounded mt-4 flex items-center">
+			{#if content == 'current'}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					See below a list of your packages that have arrived in our warehouse
+				</p>
+			{:else if content == 'invoice'}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					Please fill the form below
+				</p>
+			{:else}
+				<p class="mt-1 text-sm font-semibold text-gray-900 line-clamp-1">
+					Individual package details
+				</p>
+			{/if}
 		</div>
 		{#if content == 'current'}
 			<div class="max-w-7xl mx-auto mt-4">
@@ -88,7 +86,7 @@
 							<a
 								href={item.href}
 								class="group block hover:bg-slate-50 p-4 lg:p-5"
-								on:click={() => handleClick(item.ref, '')}
+								on:click={() => handleClick(item.ref, item.wr)}
 							>
 								<div class="flex items-center">
 									<div class="min-w-0 flex-1 flex">
@@ -184,6 +182,10 @@
 															<StatusPending />
 														{:else if item.ref == 'wh3'}
 															<StatusArrived />
+														{:else if item.ref == 'wh4'}
+															<StatusPending />
+														{:else if item.ref == 'wh5'}
+															<StatusShipped />
 														{/if}
 													</div>
 												</div>
@@ -310,6 +312,10 @@
 		{:else if content == 'wh2'}
 			<WarehouseItem2 />
 		{:else if content == 'wh3'}
+			<WarehouseItem3 />
+		{:else if content == 'wh4'}
+			<WarehouseItem3 />
+		{:else if content == 'wh5'}
 			<WarehouseItem3 />
 		{/if}
 	</div>
